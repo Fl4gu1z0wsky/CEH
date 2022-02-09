@@ -9,7 +9,8 @@ The terminology and the information are from :
 ##  TOOLS 
 
 **Nmap** – to scan open port (old name was Ethereal)
-  -F (Fast (limited port) scan). It scans normally 1000 most common port but here it is reduced to 100.
+ 
+ -F (Fast (limited port) scan). It scans normally 1000 most common port but here it is reduced to 100.
   
 **Tcpdump** – wireshark but for CLI (no graphic)
 
