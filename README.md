@@ -6,7 +6,7 @@ The terminology and the information are from :
 - Udemy: CEH v11 312-50: Certified Ethical Hacker Practice Exams. NEW (Good questions and answers well explained)
 - EC Council iClass: Certified Ethical Hacker (CEH v11) online course
 
-##  TOOLS 
+##  <span style="color:blue">TOOLS </span>
 
 **Nmap** – to scan open port (old name was Ethereal)
  
@@ -21,10 +21,10 @@ The terminology and the information are from :
 
 **SQL injection**
   
-  Tautology – use of a conditional OR clause in order to have a query always TRUE.
+  **Tautology** – use of a conditional OR clause in order to have a query always TRUE.
   (select * from user_details where userid = 'abcd' and password = 'anything' or 'x'='x')
 	
-  Error-based - 
+  **Error-based** - 
 
 
 ## SECURITY
