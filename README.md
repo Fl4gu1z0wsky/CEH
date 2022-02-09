@@ -1,12 +1,12 @@
-# CEH - Knowledges
-CEH certification
+#  :globe_with_meridians: :computer: :closed_lock_with_key: CEH - Knowledges
+CEH certification :milky_way:
 
 This repository is here to help pass the CEH. Not everything is here, but it based on my knowledges and what I needed to improve to pass the certification.
 The terminology and the information are from :
 - Udemy: CEH v11 312-50: Certified Ethical Hacker Practice Exams. NEW (Good questions and answers well explained)
 - EC Council iClass: Certified Ethical Hacker (CEH v11) online course
 
-##  <span style="color:blue">TOOLS </span>
+## :wrench: TOOLS
 
 **Nmap** – to scan open port (old name was Ethereal)
  
@@ -17,7 +17,7 @@ The terminology and the information are from :
 **Nessus** – scan automatically vulnerabilities in a network
 
 
-## ATTACKS
+## :warning: ATTACKS
 
 **SQL injection**
   
@@ -27,16 +27,16 @@ The terminology and the information are from :
   **Error-based** - 
 
 
-## SECURITY
+## :lock: SECURITY
 
 **MAC filtering** – listing of allowed devices that you need on your Wi-Fi. Helps preventing unwanted access to the network.
 
 
-## PROTOCOLS
+## :floppy_disk: PROTOCOLS
 
 **Telnet** – use TCP - does not encrypt, no authentication, several vulnerabilities.
 
-## TERMINOLOGY
+## :closed_book: TERMINOLOGY
 
 **MBSA** - Microsoft Baseline Security Analyzer - is a software tool that helps determine the security of your Windows computer based on Microsoft’s security recommendations.
 
