@@ -52,21 +52,31 @@ The terminology and the information are from :
 
 **Email Phishing** - a type of social engineering attack often used to steal user data, including login credentials and credit card numbers.
 
+**Traffic redirection** - the attacker modifies traffic in transit or sniff packets.
+
+**Traffic sent to a routing black hole** - the traffic can be redirected to null0 and can kick an IP.
+
+**Unauthorized route prefix origination** - It introduces a new prefix into the routing table. Used to get a covert attack network to be routable throughout the victim network.
+
 **reconnaissance stage** - a set of processes and techniques (Footprinting, Scanning & Enumeration) to discover and collect information about a target system covertly. There is passive and active recon. passive is just sniffing (not interacting directly with the network) while active is for example scanning ports.
 
-**** - 
-
-**** - 
-
-**** - 
-
-**** - 
-
-**** - 
 
 ## :lock: SECURITY
 
 **MAC filtering** – listing of allowed devices that you need on your Wi-Fi. Helps preventing unwanted access to the network.
+
+**Router**
+
+    Counter methods:
+    - Configuration modification : We must secure the router and the supporting system it makes use of, such as TFTP servers (used to upgrade several routers that   
+    are separated from the TFTP server by slow WAN connections).
+    - Introduction of a rogue router that : The other routing devices must trust the send information. We can block it by adding message authentication to the routing   
+    protocol. And we can also add ACLs to block routing protocol messages unwanted.
+    - Spoofing a valid routing protocol message or modifying a valid message in transit. We can prevent it with message authentication as well. And if we have a transport    
+    layer protocol like TCP for BGP, it can render the task difficult due to the pseudo-random initial sequence numbers.
+    - Sending of malformed or excess packets. Excess packets can be stopped with DoS mitigation techniques. Malformed packets are harder to identify. This is     
+    an area of computer security that needs increased attention, not just in routing protocols but in all network applications.
+        
 
 ## :floppy_disk: PROTOCOLS
 
