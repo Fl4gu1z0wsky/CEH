@@ -25,6 +25,30 @@ The terminology and the information are from :
 
 ## :warning: ATTACKS
 
+**Footprinting**
+
+**Reconnaissance stage** - a set of processes and techniques (Footprinting, Scanning & Enumeration) to discover and collect information about a target system covertly. There is passive and active recon. passive is just sniffing (not interacting directly with the network) while active is for example scanning ports.
+
+**Scan**
+
+**IDLE/IPID Scanning** - We use a zombie to send a SYN/ACK packet and it increments it's IPID while sending a reset. We do the same for another PC but we change the source for the zombie. We do that again to the zombie and if the IPID has been incremented 2 times, it means the port is open.
+
+**SSDP Scanning** - (Simple Service Discovery Protocol) is the basis of the discovery protocol of Universal Plug and Play (UPnP) and is intended for use in residential or small office environments.
+
+**UDP Scanning** - send a UDP packet to various ports on the target host. We use it with nmap to scan UDP ports (the same as TCP ports).
+
+**Banner Grabbing** -  technique used to gain information about a computer system on a network and the services running on its open ports. We often use nmap for this and those services : HTTP (80), FTP (21) or SMTP (25).
+
+**Mail**
+
+**Email spoofing** - the fabrication of an email header in the hopes of duping the recipient into thinking the email originated from someone or somewhere other than the intended source.
+
+**Email Masquerading** - the perpetrator assumes the identity of a fellow network user or co-employee to trick victims into providing user credentials. On the contrary of email spoofing, this is done from inside the network from a stolen account.
+
+**Email Harvesting** - the process of obtaining lists of email addresses.
+
+**Email Phishing** - a type of social engineering attack often used to steal user data, including login credentials and credit card numbers.
+
 **SQL injection**
   
  **Tautology** – use of a conditional OR clause in order to have a query always TRUE.
@@ -38,19 +62,7 @@ The terminology and the information are from :
 **End-of-Line Comment** - the code is nullified with a end of line comments.
 (SELECT * FROM user WHERE name = 'x' AND userid IS NULL; --';)
 
-**IDLE/IPID Scanning** - We use a zombie to send a SYN/ACK packet and it increments it's IPID while sending a reset. We do the same for another PC but we change the source for the zombie. We do that again to the zombie and if the IPID has been incremented 2 times, it means the port is open.
-
-**SSDP Scanning** - (Simple Service Discovery Protocol) is the basis of the discovery protocol of Universal Plug and Play (UPnP) and is intended for use in residential or small office environments.
-
-**UDP Scanning** - send a UDP packet to various ports on the target host. We use it with nmap to scan UDP ports (the same as TCP ports).
-
-**Email spoofing** - the fabrication of an email header in the hopes of duping the recipient into thinking the email originated from someone or somewhere other than the intended source.
-
-**Email Masquerading** - the perpetrator assumes the identity of a fellow network user or co-employee to trick victims into providing user credentials. On the contrary of email spoofing, this is done from inside the network from a stolen account.
-
-**Email Harvesting** - the process of obtaining lists of email addresses.
-
-**Email Phishing** - a type of social engineering attack often used to steal user data, including login credentials and credit card numbers.
+**Router**
 
 **Traffic redirection** - the attacker modifies traffic in transit or sniff packets.
 
@@ -58,8 +70,13 @@ The terminology and the information are from :
 
 **Unauthorized route prefix origination** - It introduces a new prefix into the routing table. Used to get a covert attack network to be routable throughout the victim network.
 
-**Reconnaissance stage** - a set of processes and techniques (Footprinting, Scanning & Enumeration) to discover and collect information about a target system covertly. There is passive and active recon. passive is just sniffing (not interacting directly with the network) while active is for example scanning ports.
+**Cryptography**
 
+**Trickery and Deceit** – it involves the use of social engineering techniques to extract cryptography keys.
+
+**One-Time Pad** – a one-time pad contains many non-repeating groups of letters or number keys, which are chosen randomly.
+
+**Frequency Analysis** – It is the study of the frequency or letters or groups of letters in a cipher text. It works on the fact that, in any given stretch of written language, certain letters and combination of letters occur with varying frequencies.
 
 ## :lock: SECURITY
 
@@ -88,5 +105,14 @@ The terminology and the information are from :
 
 **WAP** - Wireless Access Point – use 802.11 
 
-**Banner Grabbing** -  technique used to gain information about a computer system on a network and the services running on its open ports. We often use nmap for this and those services : HTTP (80), FTP (21) or SMTP (25).
+
+**HIPAA** - Health Insurance Portability and Accountability Act - It was created primarily to modernize the flow of healthcare information, stipulate how personally     identifiable information maintained by the healthcare and healthcare insurance industries should be protected from fraud and theft.
+
+**FISMA** - The Federal Information Security Management Act - The act requires each federal agency to develop, document, and implement an agency-wide program to provide    information security. 
+
+**ISO/IEC 27002** - is an information security standard published by the International Organization for Standardization (ISO) and by the International Electrotechnical    Commission (IEC). It comes from the ISO 27000 serie. 
+
+**COBIT** - Control Objectives for Information and Related Technologies - Created by ISACA (Information Systems Audit and Control Association). It defines a set of    
+generic processes for the management of IT, with each process defined together with process inputs and outputs, key process-activities, process objectives,    
+performance measures and an elementary maturity model.
 
