@@ -25,11 +25,11 @@ The terminology and the information are from :
 
 ## :warning: ATTACKS
 
-**Footprinting**
+###Footprinting
 
 **Reconnaissance stage** - a set of processes and techniques (Footprinting, Scanning & Enumeration) to discover and collect information about a target system covertly. There is passive and active recon. passive is just sniffing (not interacting directly with the network) while active is for example scanning ports.
 
-**Scan**
+###Scan
 
 **IDLE/IPID Scanning** - We use a zombie to send a SYN/ACK packet and it increments it's IPID while sending a reset. We do the same for another PC but we change the source for the zombie. We do that again to the zombie and if the IPID has been incremented 2 times, it means the port is open.
 
@@ -39,7 +39,12 @@ The terminology and the information are from :
 
 **Banner Grabbing** -  technique used to gain information about a computer system on a network and the services running on its open ports. We often use nmap for this and those services : HTTP (80), FTP (21) or SMTP (25).
 
-**Mail**
+**Firewalking** - Firewalking is the method of determining the movement of a data packet from an untrusted external host to a protected internal host through a firewall.   
+It uses traceroute and TTL (Time to Live) to analyze IP packet response to in order to determine gateway ACL (Access Control List) filters and map network. The idea   
+behind firewalking is to determine which ports are open and whether packets with control information can pass through a packet-filtering device. It is an active   
+reconnaissance network security analysis technique that attempts to determine which layer 4 protocols a specific firewall will allow.
+
+###Mail
 
 **Email spoofing** - the fabrication of an email header in the hopes of duping the recipient into thinking the email originated from someone or somewhere other than the intended source.
 
@@ -49,7 +54,7 @@ The terminology and the information are from :
 
 **Email Phishing** - a type of social engineering attack often used to steal user data, including login credentials and credit card numbers.
 
-**SQL injection**
+###SQL injection
   
  **Tautology** – use of a conditional OR clause in order to have a query always TRUE.
 (select * from user_details where userid = 'abcd' and password = 'anything' or 'x'='x')
@@ -62,7 +67,7 @@ The terminology and the information are from :
 **End-of-Line Comment** - the code is nullified with a end of line comments.
 (SELECT * FROM user WHERE name = 'x' AND userid IS NULL; --';)
 
-**Router**
+###Router
 
 **Traffic redirection** - the attacker modifies traffic in transit or sniff packets.
 
@@ -70,7 +75,7 @@ The terminology and the information are from :
 
 **Unauthorized route prefix origination** - It introduces a new prefix into the routing table. Used to get a covert attack network to be routable throughout the victim network.
 
-**Cryptography**
+###Cryptography
 
 **Trickery and Deceit** – it involves the use of social engineering techniques to extract cryptography keys.
 
@@ -78,11 +83,30 @@ The terminology and the information are from :
 
 **Frequency Analysis** – It is the study of the frequency or letters or groups of letters in a cipher text. It works on the fact that, in any given stretch of written language, certain letters and combination of letters occur with varying frequencies.
 
+###Bluetooth
+
+**Bluedriving** - This tool is to research about the targeted surveillance of people by means of its cellular phone or car. It can search for and show a lot    
+of information about the device, the GPS address and the historic location of devices on a map.
+
+**Bluejacking** - It sends unsolocited messages over bluetooth. IT is generally harmless. Usually, a bluejacker will only send a text message, but it's possible   
+to send images or sounds with modern phones. Bluejacking has been used in guerrilla marketing campaigns to promote advergames.
+
+**Bluesnarfing** - It is denial of service (DoS). The crafted packet exceed the limited size available on bluetooth. The devince cannot process the packet  
+and the it becomes unavailable.
+
+**Bluesmacking** - The unauthorized access of information from a wireless device through a Bluetooth connection. This allows access to calendars, contact lists, emails and text messages, and on some phones, users can copy pictures and private videos. 
+
+###Web
+
+**Session Hijacking** - Also known as cookie hijacking, it exploits a valid computer session to gain unauthorized access. The HTTP cookies can be stolen by an intermediary computer or access to the saved cookies on the victim's computer.
+
 ## :lock: SECURITY
+
+###WIFI
 
 **MAC filtering** – listing of allowed devices that you need on your Wi-Fi. Helps preventing unwanted access to the network.
 
-**Router**
+###Router
 
     Counter methods:
     - Configuration modification : We must secure the router and the supporting system it makes use of, such as TFTP servers (used to upgrade several routers that   
@@ -93,7 +117,6 @@ The terminology and the information are from :
     layer protocol like TCP for BGP, it can render the task difficult due to the pseudo-random initial sequence numbers.
     - Sending of malformed or excess packets. Excess packets can be stopped with DoS mitigation techniques. Malformed packets are harder to identify. This is     
     an area of computer security that needs increased attention, not just in routing protocols but in all network applications.
-        
 
 ## :floppy_disk: PROTOCOLS
 
