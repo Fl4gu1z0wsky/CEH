@@ -39,9 +39,9 @@ The terminology and the information are from :
 
 **Banner Grabbing** -  technique used to gain information about a computer system on a network and the services running on its open ports. We often use nmap for this and those services : HTTP (80), FTP (21) or SMTP (25).
 
-**Firewalking** - Firewalking is the method of determining the movement of a data packet from an untrusted external host to a protected internal host through a firewall.   
-It uses traceroute and TTL (Time to Live) to analyze IP packet response to in order to determine gateway ACL (Access Control List) filters and map network. The idea   
-behind firewalking is to determine which ports are open and whether packets with control information can pass through a packet-filtering device. It is an active   
+**Firewalking** - Firewalking is the method of determining the movement of a data packet from an untrusted external host to a protected internal host through a firewall. 
+It uses traceroute and TTL (Time to Live) to analyze IP packet response to in order to determine gateway ACL (Access Control List) filters and map network. The idea 
+behind firewalking is to determine which ports are open and whether packets with control information can pass through a packet-filtering device. It is an active 
 reconnaissance network security analysis technique that attempts to determine which layer 4 protocols a specific firewall will allow.
 
 ### Mail
@@ -85,13 +85,13 @@ reconnaissance network security analysis technique that attempts to determine wh
 
 ### Bluetooth
 
-**Bluedriving** - This tool is to research about the targeted surveillance of people by means of its cellular phone or car. It can search for and show a lot    
+**Bluedriving** - This tool is to research about the targeted surveillance of people by means of its cellular phone or car. It can search for and show a lot 
 of information about the device, the GPS address and the historic location of devices on a map.
 
-**Bluejacking** - It sends unsolocited messages over bluetooth. IT is generally harmless. Usually, a bluejacker will only send a text message, but it's possible   
+**Bluejacking** - It sends unsolocited messages over bluetooth. IT is generally harmless. Usually, a bluejacker will only send a text message, but it's possible 
 to send images or sounds with modern phones. Bluejacking has been used in guerrilla marketing campaigns to promote advergames.
 
-**Bluesnarfing** - It is denial of service (DoS). The crafted packet exceed the limited size available on bluetooth. The devince cannot process the packet  
+**Bluesnarfing** - It is denial of service (DoS). The crafted packet exceed the limited size available on bluetooth. The devince cannot process the packet 
 and the it becomes unavailable.
 
 **Bluesmacking** - The unauthorized access of information from a wireless device through a Bluetooth connection. This allows access to calendars, contact lists, emails and text messages, and on some phones, users can copy pictures and private videos. 
@@ -129,12 +129,12 @@ and the it becomes unavailable.
 **WAP** - Wireless Access Point – use 802.11 
 
 
-**HIPAA** - Health Insurance Portability and Accountability Act - It was created primarily to modernize the flow of healthcare information, stipulate how personally     identifiable information maintained by the healthcare and healthcare insurance industries should be protected from fraud and theft.
+**HIPAA** - Health Insurance Portability and Accountability Act - It was created primarily to modernize the flow of healthcare information, stipulate how personally identifiable information maintained by the healthcare and healthcare insurance industries should be protected from fraud and theft.
 
-**FISMA** - The Federal Information Security Management Act - The act requires each federal agency to develop, document, and implement an agency-wide program to provide    information security. 
+**FISMA** - The Federal Information Security Management Act - The act requires each federal agency to develop, document, and implement an agency-wide program to provide information security. 
 
-**ISO/IEC 27002** - is an information security standard published by the International Organization for Standardization (ISO) and by the International Electrotechnical    Commission (IEC). It comes from the ISO 27000 serie. 
+**ISO/IEC 27002** - is an information security standard published by the International Organization for Standardization (ISO) and by the International Electrotechnical Commission (IEC). It comes from the ISO 27000 serie. 
 
-**COBIT** - Control Objectives for Information and Related Technologies - Created by ISACA (Information Systems Audit and Control Association). It defines a set of    
+**COBIT** - Control Objectives for Information and Related Technologies - Created by ISACA (Information Systems Audit and Control Association). It defines a set of 
 generic processes for the management of IT, with each process defined together with process inputs and outputs, key process-activities, process objectives, performance measures and an elementary maturity model.
 
