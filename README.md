@@ -129,7 +129,7 @@ and the it becomes unavailable.
 
 ### USB
 
-**Juice jacking* - An infected USB charging station is used to compromise linked devices.
+**Juice jacking** - An infected USB charging station is used to compromise linked devices.
 
 ### Social Engineering
 
