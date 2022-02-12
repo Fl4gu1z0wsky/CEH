@@ -154,7 +154,7 @@ and the it becomes unavailable.
 
 **Identification** - The identification phase of an incident response plan involves determining whether or not an organization has been breached.
 
-**Identification** - If it is discovered that a breach has occurred, organizations should work fast to contain the event. However, this should be done appropriately and does not require all sensitive data to be deleted from the system. Instead, strategies should be developed to contain the breach and prevent it from spreading further.
+**Containment** - If it is discovered that a breach has occurred, organizations should work fast to contain the event. However, this should be done appropriately and does not require all sensitive data to be deleted from the system. Instead, strategies should be developed to contain the breach and prevent it from spreading further.
 
 **Neutralization** - Once all systems and devices that have been impacted by the breach have been identified, an organization should perform a coordinated shutdown.
 
