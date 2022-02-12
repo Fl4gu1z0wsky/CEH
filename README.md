@@ -83,6 +83,14 @@ reconnaissance network security analysis technique that attempts to determine wh
 
 **Frequency Analysis** – It is the study of the frequency or letters or groups of letters in a cipher text. It works on the fact that, in any given stretch of written language, certain letters and combination of letters occur with varying frequencies.
 
+### WIFI
+
+**aLTEr** - MITM attack using a fake eNodeB (the 4G cell tower). It acts as a malicious relay and the attacker has access to the encrypted communication of the target. Furthermore the information can be manipulated. The goal is to alter the IP of the DNS querry to redirect the trafic to a malicious DNS. Thus the server replies maliciously from a request.
+
+**Sinkhole** - The attack is carried out by either hacking a node in the network or introducing a fabricated node in the network.The malicious node promotes itself as the shortest path to the base station and tries to guide the traffic from other nodes towards itself. Then the intruder can compromise the data.
+
+**Wi-jacking** - An attack in which attackers accesss neighbor’s WiFi without any form of cracking, relying on saved browsers creadentials which are reused again for the same URL (router admin interface credentials remembered by the browser).
+
 ### Bluetooth
 
 **Bluedriving** - This tool is to research about the targeted surveillance of people by means of its cellular phone or car. It can search for and show a lot 
@@ -91,14 +99,20 @@ of information about the device, the GPS address and the historic location of de
 **Bluejacking** - It sends unsolocited messages over bluetooth. IT is generally harmless. Usually, a bluejacker will only send a text message, but it's possible 
 to send images or sounds with modern phones. Bluejacking has been used in guerrilla marketing campaigns to promote advergames.
 
-**Bluesnarfing** - It is denial of service (DoS). The crafted packet exceed the limited size available on bluetooth. The devince cannot process the packet 
+**Bluesmacking** - It is denial of service (DoS). The crafted packet exceed the limited size available on bluetooth. The devince cannot process the packet 
 and the it becomes unavailable.
 
-**Bluesmacking** - The unauthorized access of information from a wireless device through a Bluetooth connection. This allows access to calendars, contact lists, emails and text messages, and on some phones, users can copy pictures and private videos. 
+**Bluesnarfing** - The unauthorized access of information from a wireless device through a Bluetooth connection. This allows access to calendars, contact lists, emails and text messages, and on some phones, users can copy pictures and private videos. 
+
+**Bluebugging** - It was developed after the onset of bluejacking and bluesnarfing. Similar to bluesnarfing, bluebugging accesses and uses all phone featuresbut is limited by the transmitting power of class 2 Bluetooth radios, normally capping its range at 10–15 meters.
 
 ### Web
 
 **Session Hijacking** - Also known as cookie hijacking, it exploits a valid computer session to gain unauthorized access. The HTTP cookies can be stolen by an intermediary computer or access to the saved cookies on the victim's computer.
+
+### USB
+
+**Juice jacking* - An infected USB charging station is used to compromise linked devices.
 
 ## :lock: SECURITY
 
@@ -118,16 +132,27 @@ and the it becomes unavailable.
     - Sending of malformed or excess packets. Excess packets can be stopped with DoS mitigation techniques. Malformed packets are harder to identify. This is     
     an area of computer security that needs increased attention, not just in routing protocols but in all network applications.
 
+##Cryptography
+
+**Quantum cryptography** - The science of exploiting quantum mechanical properties to perform cryptographic tasks. The advantage of quantum cryptography lies in the fact that it allows the completion of various cryptographic tasks that are proven or conjectured to be impossible using only classical (i.e. non-quantum) communication. For example, it is impossible to copy data encoded in a quantum state. If one attempts to read the encoded data, the quantum state will be changed (no-cloning theorem). This could be used to detect eavesdropping in quantum key distribution.
+
+**Hardware-based** - This is the use of computer hardware to assist software, or sometimes replace software, in the process of data encryption (e.g. AES).
+
+**Homomorphic** - This is a form of encryption that permits users to perform computations on its encrypted data without first decrypting it.
+
+**Elliptic-curve** - This is an approach to public-key cryptography based on the algebraic structure of elliptic curves over finite fields. ECC allows smaller keys compared to non-EC cryptography (based on plain Galois fields) to provide equivalent security
+
 ## :floppy_disk: PROTOCOLS
 
 **Telnet** – use TCP - does not encrypt, no authentication, several vulnerabilities.
+
+**Quantum coin flipping** - It is used between two participants who do not trust each other. The participants communicate via a quantum channel and exchange information through the transmission of qubits.
 
 ## :closed_book: TERMINOLOGY
 
 **MBSA** - Microsoft Baseline Security Analyzer - is a software tool that helps determine the security of your Windows computer based on Microsoft’s security recommendations.
 
 **WAP** - Wireless Access Point – use 802.11 
-
 
 **HIPAA** - Health Insurance Portability and Accountability Act - It was created primarily to modernize the flow of healthcare information, stipulate how personally identifiable information maintained by the healthcare and healthcare insurance industries should be protected from fraud and theft.
 
@@ -138,3 +163,14 @@ and the it becomes unavailable.
 **COBIT** - Control Objectives for Information and Related Technologies - Created by ISACA (Information Systems Audit and Control Association). It defines a set of 
 generic processes for the management of IT, with each process defined together with process inputs and outputs, key process-activities, process objectives, performance measures and an elementary maturity model.
 
+## :bulb: MANAGEMENT
+
+**AV** - Asset value - The cost of the hardware and the person who repair it (and the time to fix).
+
+**EF** - Exposure factore - The impact of the risk over the asset, or percentage of asset lost.
+
+**SLE** - Single Loss Expectancy - AV * EF
+
+**ARO** - Annual rate of occurrence - The expected value (cost) of a yearly occurrence of incidents of given type (e.g. the chance of a HW to have a failure).
+
+**ALE** - Annual Loss Expectancy = SLE * ARO
