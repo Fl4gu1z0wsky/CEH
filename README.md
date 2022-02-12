@@ -136,6 +136,5 @@ and the it becomes unavailable.
 **ISO/IEC 27002** - is an information security standard published by the International Organization for Standardization (ISO) and by the International Electrotechnical    Commission (IEC). It comes from the ISO 27000 serie. 
 
 **COBIT** - Control Objectives for Information and Related Technologies - Created by ISACA (Information Systems Audit and Control Association). It defines a set of    
-generic processes for the management of IT, with each process defined together with process inputs and outputs, key process-activities, process objectives,    
-performance measures and an elementary maturity model.
+generic processes for the management of IT, with each process defined together with process inputs and outputs, key process-activities, process objectives, performance measures and an elementary maturity model.
 
