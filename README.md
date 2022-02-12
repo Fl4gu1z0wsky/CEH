@@ -110,6 +110,8 @@ and the it becomes unavailable.
 
 **Session Hijacking** - Also known as cookie hijacking, it exploits a valid computer session to gain unauthorized access. The HTTP cookies can be stolen by an intermediary computer or access to the saved cookies on the victim's computer.
 
+**Insecure direct object references** - IDOR are a cybersecurity issue that occurs when a web application developer uses an identifier for direct access to an internal implementation object but provides no additional access control and/or authorization checks (e.g. https://www.example.com/transaction.php?id=74656, there is no check on the id provided).
+
 ### USB
 
 **Juice jacking* - An infected USB charging station is used to compromise linked devices.
@@ -132,7 +134,7 @@ and the it becomes unavailable.
     - Sending of malformed or excess packets. Excess packets can be stopped with DoS mitigation techniques. Malformed packets are harder to identify. This is     
     an area of computer security that needs increased attention, not just in routing protocols but in all network applications.
 
-##Cryptography
+## Cryptography
 
 **Quantum cryptography** - The science of exploiting quantum mechanical properties to perform cryptographic tasks. The advantage of quantum cryptography lies in the fact that it allows the completion of various cryptographic tasks that are proven or conjectured to be impossible using only classical (i.e. non-quantum) communication. For example, it is impossible to copy data encoded in a quantum state. If one attempts to read the encoded data, the quantum state will be changed (no-cloning theorem). This could be used to detect eavesdropping in quantum key distribution.
 
@@ -141,6 +143,24 @@ and the it becomes unavailable.
 **Homomorphic** - This is a form of encryption that permits users to perform computations on its encrypted data without first decrypting it.
 
 **Elliptic-curve** - This is an approach to public-key cryptography based on the algebraic structure of elliptic curves over finite fields. ECC allows smaller keys compared to non-EC cryptography (based on plain Galois fields) to provide equivalent security
+
+## Firewall
+
+**Software Firewall** - It is placed between the normal application and the networking components of the operating system and regulates data traffic through two things: port numbers, and applications. Depending on your firewall settings, your firewall could stop programs from accessing the Internet, and/or block incoming or outgoing access via ports.
+
+## Incident handling
+
+**Preparation** - During the preparation phase, organizations should establish policies and procedures for incident response management and enable efficient communication methods both before and after the incident.
+
+**Identification** - The identification phase of an incident response plan involves determining whether or not an organization has been breached.
+
+**Identification** - If it is discovered that a breach has occurred, organizations should work fast to contain the event. However, this should be done appropriately and does not require all sensitive data to be deleted from the system. Instead, strategies should be developed to contain the breach and prevent it from spreading further.
+
+**Neutralization** - Once all systems and devices that have been impacted by the breach have been identified, an organization should perform a coordinated shutdown.
+
+**Recovery** - Recovery plan involves restoring all affected systems and devices to allow for normal operations to continue. However, before getting systems back up and running, it is vital to ensure that the breach's cause has been identified to prevent another breach from occurring again.
+
+**Review** - Throughout the incident, all details should have been properly documented so that the information can be used to prevent similar breaches in the future.
 
 ## :floppy_disk: PROTOCOLS
 
