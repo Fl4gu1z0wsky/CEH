@@ -30,6 +30,14 @@ The terminology and the information are from :
 
 ### Scan
 
+**TCP Connect/Full Open Scan** - In TCP Connect scanning, the OS’s TCP connect() system call tries to open a connection to every port of interest on the target machine. It is one of the most reliable forms of TCP scanning by completing a three-way handshake.
+
+**NULL Scan** - The Null Scan is a type of TCP scan that hackers — both ethical and malicious — use to identify listening TCP ports. It can help identify potential holes for server hardening.
+
+**Xmas scan** - It is considered a stealthy scan which analyzes responses to Xmas packets to determine the nature of the replying device. Each operating system or network device responds in a different way to Xmas packets revealing local information such as OS (Operating System), port state and more.
+
+**Half-open scann** - It is referred to as an SYN scan it’s a fast and sneaky scan that tries to find potential open ports on the target computer. This scan is fast and hard to detect because it never completes the full TCP 3 way-handshake. The scanner sends an SYN message and just notes the SYN-ACK responses. The scanner doesn’t complete the connection by sending the final ACK: it leaves the target hanging. Any SYN-ACK responses are possibly open ports. An RST (reset) is a closed port.
+
 **IDLE/IPID Scanning** - We use a zombie to send a SYN/ACK packet and it increments it's IPID while sending a reset. We do the same for another PC but we change the source for the zombie. We do that again to the zombie and if the IPID has been incremented 2 times, it means the port is open.
 
 **SSDP Scanning** - (Simple Service Discovery Protocol) is the basis of the discovery protocol of Universal Plug and Play (UPnP) and is intended for use in residential or small office environments.
@@ -155,11 +163,19 @@ and the it becomes unavailable.
 
 **Low-bandwidth attacks** - Attacks which are spread out across a long period of time or a large number of source IPs, such as nmap's slow scan, can be difficult to pick out of the background of benign traffic. An online password cracker which tests one password for each user every day will look nearly identical to a normal user who mistyped their password.
 
+**Heartbleed** - This is a security bug in the OpenSSL cryptography library, which is a widely used implementation of the Transport Layer Security (TLS) protocol. It results from improper input validation (due to a missing bounds check) in the implementation of the TLS heartbeat extension. It is a buffer over-read vuln.
+
+**SSL/TLS Renegotiation Vulnerability** - It allows one part of an encrypted connection (the one taking place before renegotiation) to be controlled by one party with the other part (the one taking place after renegotiation) to be controlled by another. A MITM attacker can open a connection to an SSL server, send some data, request renegotiation, and, from that point on, continue to forward to the SSL server the data coming from a genuine user.
+
 ### Others
 
 **Side-channel** - This is an attack based on information gained from the implementation of a computer system. Timing information, power consumption, electromagnetic leaks or even sound can provide an extra source of information, which can be exploited.
 
 **Exploit Kits** - An exploit kit is simply a collection of exploits, which is a simple one-in-all tool for managing a variety of exploits altogether. Exploit kits act as a kind of repository and make it easy for users without much technical knowledge to use exploits.
+
+**Shellshock** - Also known as Bashdoor. It is a security bug in the Unix Bash shell. Shellshock could enable an attacker to cause Bash to execute arbitrary commands and gain unauthorized access to many Internet-facing services, such as web servers, that use Bash to process requests.
+
+**POODLE** - Padding Oracle On Downgraded Legacy Encryption - It is a man-in-the-middle exploit which takes advantage of Internet and security software clients' fallback to SSL 3.0. If attackers successfully exploit this vulnerability, on average, they only need to make 256 SSL 3.0 requests to reveal one byte of encrypted messages.
 
 ## :lock: SECURITY
 
@@ -241,6 +257,22 @@ generic processes for the management of IT, with each process defined together w
 **802.11i** - Implemented as Wi-Fi Protected Access II (WPA2). This standard specifies security mechanisms for wireless networks, replacing the short Authentication and privacy clause. It deprecated broken Wired Equivalent Privacy (WEP). Published in 2004.
 
 **802.11n** - It operates on both the 2.4 GHz and the 5 GHz bands. Support for 5 GHz bands is optional. Its net data rate ranges from 54 Mbit/s to 600 Mbit/s. Published in 2006.
+
+**Vulnerability scans** - They check for vulnerabilities in your system and report potential exposures. It is automated.
+
+**Penetration tests** - They are intended to exploit weaknesses in the architecture of your IT network and determine the degree to which a malicious attacker can gain unauthorized access to your assets. It is done manually.
+
+**anomaly-based IDS** - An anomaly-based intrusion detection system is an intrusion detection system for detecting both network and computer intrusions and misuse by monitoring system activity and classifying it as either normal or anomalous. The classification is based on heuristics or rules, rather than patterns or signatures.
+
+**signature-based IDS** - It monitors inbound network traffic to find sequences and patterns that match a particular attack signature.
+
+**RSA** - (Rivest–Shamir–Adleman) It is a public-key cryptosystem that is widely used for secure data transmission. An RSA user creates and publishes a public key based on two large prime numbers, along with an auxiliary value. The prime numbers are kept secret. Messages can be encrypted by anyone, via the public key, but can only be decoded by someone who knows the prime numbers.
+
+**MD5** - It is a widely used hash function producing a 128-bit hash value. Although MD5 was initially designed to be used as a cryptographic hash function, it has been found to suffer from extensive vulnerabilities. It can still be used as a checksum to verify data integrity, but only against unintentional corruption.
+
+**SHA-1** - (Secure Hash Algorithm 1) It is a cryptographic hash function which takes an input and produces a 160-bit (20-byte) hash value known as a message digest – typically rendered as a hexadecimal number, 40 digits long.
+
+**RC5 ** - (Rivest Cipher) It is a symmetric-key block cipher notable for its simplicity. The Advanced Encryption Standard (AES) candidate RC6 was based on RC5.
 
 ## :bulb: MANAGEMENT
 
