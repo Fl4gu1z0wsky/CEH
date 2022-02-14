@@ -1,7 +1,7 @@
 #  :globe_with_meridians: :computer: :closed_lock_with_key: CEH - Knowledges
 CEH certification :milky_way:
 
-This repository is here to help pass the CEH. Not everything is here, but it based on my knowledges and what I needed to improve to pass the certification.
+This repository is here to help for the CEH.
 The terminology and the information are from :
 - Udemy: CEH v11 312-50: Certified Ethical Hacker Practice Exams. NEW (Good questions and answers well explained)
 
@@ -37,6 +37,17 @@ The terminology and the information are from :
     - Exploit modules: are pieces of code within the database that when running on a victim computer, the attacker will attempt to leverage a vulnerability on the local or remote system compromising the payload module such as the Meterpreter shell.
     - Payload Module: A payload is generally attached to the exploit before its execution. The payload contains the set of instructions that the victim’s computer is to carry out after compromise (Bind Shells, Reverse Shells, Meterpreter Shell).
     - NOPS Module: level language (assembly language). It simply slides the program execution to the next memory address. NOPs are commonly used before the start of the ShellCode to ensure its successful execution in the memory while performing no operations and just sliding through the memory addresses. The \x90 instruction represents a NOP instruction in the hexadecimal format.
+    
+**Aircrack-ng** - It is a network software suite consisting of a detector, packet sniffer, WEP and WPA/WPA2-PSK cracker and analysis tool for 802.11 wireless LANs. It works with any wireless network interface controller whose driver supports raw monitoring mode and can sniff 802.11a, 802.11b and 802.11g traffic. 
+
+**Snort** - It is a free open source network intrusion detection system (IDS) and intrusion prevention system (IPS). The program can also be used to detect probes or attacks, including, but not limited to, operating system fingerprinting attempts, semantic URL attacks, buffer overflows, server message block probes, and stealth port scans.
+
+    - Sniffer Mode: The program will read network packets and display them on the console.
+    - Packet Logger Mode: In packet logger mode, the program will log packets to the disk.
+    - Network Intrusion Detection System Mode: In intrusion detection mode, the program will monitor network traffic and analyze it against a rule set defined by the user. The program will then perform a specific action based on what has been identified.
+    
+**Cain & Abel** - It is a password recovery tool for Microsoft Windows. It can recover many kinds of passwords using methods such as network packet sniffing, cracking various password hashes by using methods such as dictionary attacks, brute force and cryptanalysis attacks.
+
 
 ## :warning: ATTACKS
 
@@ -342,6 +353,16 @@ generic processes for the management of IT, with each process defined together w
 **SHA-1** - (Secure Hash Algorithm 1) It is a cryptographic hash function which takes an input and produces a 160-bit (20-byte) hash value known as a message digest – typically rendered as a hexadecimal number, 40 digits long.
 
 **RC5** - (Rivest Cipher) It is a symmetric-key block cipher notable for its simplicity. The Advanced Encryption Standard (AES) candidate RC6 was based on RC5.
+
+**IRC** - Internet Relay Chat - It is an application layer protocol that facilitates communication in text. The chat process works on a client/server networking model.
+
+**IPsec** - Internet Protocol Security - It  is a secure network protocol suite that authenticates and encrypts the packets of data to provide secure encrypted communication between two computers over an Internet Protocol network. It is used in virtual private networks (VPNs).
+
+**PPP** - Point-to-Point Protocol - It is a Data link layer (layer 2) communications protocol between two routers directly without any host or any other networking in between. It can provide connection authentication, transmission encryption, and compression.
+
+**PEM** - Privacy-Enhanced Mail - It is a file format for storing and sending cryptographic keys, certificates, and other data.  While the original standards were never broadly adopted, and were supplanted by PGP and S/MIME, the textual encoding they defined became very popular. The PEM format was eventually formalized by the IETF in RFC 7468.
+
+**SET** - Secure Electronic Transaction - It is a communications protocol standard for securing credit card transactions over networks, specifically, the Internet. It is a set of security protocols and formats that enabled users to employ the existing credit card payment infrastructure on an open network in a secure fashion. However, it failed to gain attraction in the market. Visa now promotes the 3-D Secure scheme.
 
 ### IoT
 
