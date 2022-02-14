@@ -187,6 +187,8 @@ and the it becomes unavailable.
 
 **HTTP Parameter Pollution** - HPP - This is a vulnerability that occurs due to the passing of multiple parameters having the same name. By exploiting these effects, an attacker may bypass input validation, trigger application errors, or modify internal variables values.
 
+**Website defacement vulnerability** - It is the unauthorized modification of web pages, including the addition, removal, or alteration of existing content. These attacks are commonly carried out by hacktivists.
+
 ### USB
 
 **Juice jacking** - An infected USB charging station is used to compromise linked devices.
@@ -212,6 +214,8 @@ and the it becomes unavailable.
 **WHOIS** - is a query and response protocol that is widely used for querying databases that store the registered users or assignees of an Internet resource, such as a domain name, an IP address block or an autonomous system, but is also used for a wider range of other information.
 
 **Session splicing** - One basic technique is to split the attack payload into multiple small packets so that the IDS must reassemble the packet stream to detect the attack. By itself, small packets will not evade any IDS that reassembles packet streams. However, small packets can be further modified in order to complicate reassembly and detection. One evasion technique is to pause between sending parts of the attack, hoping that the IDS will time out before the target computer does.
+
+**Insertion Attack** - The attacker can send packets whose time-to-live (TTL) fields are crafted to reach the IDS but not the target computers. This will result in the IDS and the target system having two different character strings. An attacker confronts the IDS with a stream of one-character packets (the attacker-originated data stream), in which one of the characters (the letter “X”) will be accepted only by the IDS. As a result, the IDS and the end system reconstruct two different strings.
 
 **Unicode evasion** - Using Unicode representation, where each character has a unique value regardless of the platform, program, or language, is also an effective way to evade IDSs. For example, an attacker might evade an IDS by using the Unicode character c1 to represent a slash for a Web page request.
 
@@ -241,6 +245,14 @@ and the it becomes unavailable.
 
 **Fuzzing** - A Black Box software testing technique, which basically consists in finding implementation bugs using malformed/semi-malformed data injection in an automated fashion.
 
+**Rootkit** - Malicious software that provides root-level, privileged access to a computer while hiding its existence and actions. Hackers use rootkits to conceal themselves until they decide to execute their malicious malware. The list below show what can be done with a rootkit:
+
+    - Sensitive data stolen
+    - Malware infection
+    - File removal
+    - Eavesdropping
+    - Remote control
+    
 
 ## :lock: SECURITY
 
@@ -278,6 +290,13 @@ and the it becomes unavailable.
 
 **DNSSEC** - Domain Name System Security Extension - When deployed, computers will be able to confirm if DNS responses are legitimate. It also has the ability to verify that a domain name does not exist at all, which can help prevent man-in-the-middle attacks. DNSSEC will verify the root domain or sometimes called “signing the root.” When an end-user attempts to access a site, a stub resolver on their computer requests the site's IP address from a recursive name server. After the server requests the record, it will also request the zones DNSEC key. The key will then be used to verify that the IP address record is the same as the authoritative server's record. Next, the recursive name server would verify that the address record came from the authoritative name server. It would then verify it has been modified and resolves the correct domain source. If there has been a modification to the source, then the recursive name server will not allow the connection to occur to the site.
 
+**HoneyPot** - It is a decoy system or servers deployed alongside production systems within the network. When deployed as enticing targets for attackers, honeypots can add security monitoring opportunities for blue teams and misdirect the adversary from their true target.
+
+    - Pure honeypots: The attacker's activities are monitored by using a bug tap installed on the honeypot's link to the network. No other software needs to be installed.
+    - Low-interaction Honeypots: It will only give an attacker minimal access to the operating system. ‘Low interaction’ means precisely that the adversary will not be able to interact with your decoy system in any depth, as it is a much more static environment.
+    - High interaction honeypots: It emulates certain protocols or services. The attacker is provided with real systems to attack, making it far less likely they will guess they are being diverted or observed. As the systems are only present as a decoy, any traffic that is found is by its very existence malicious, making it easy to spot threats and track and trace an attacker's behavior.
+    - Research honeypots: They are run to gather information about the black hat community's motives and tactics targeting different networks. These honeypots do not add direct value to a specific organization; instead, they are used to research the threats that organizations face and to learn how to better protect against those threats.
+
 ### Security test
 
 **SAST** - Static application security testing - It is used to secure software by reviewing the source code of the software to identify sources of vulnerabilities. An SAST tool scans the source code of applications and its components to identify potential security vulnerabilities in their software and architecture. Static analysis tools can detect an estimated 50% of existing security vulnerabilities.
@@ -312,6 +331,8 @@ and the it becomes unavailable.
 **PKI** - Public Key Infrastructure - Encryption is typically done at the 6th layer of the OSI model (Presentation Layer), although it can be done on the application, session, transport, or network layers, each having its own advantages and disadvantages. Decryption is also handled at the presentation layer.
 
 **HIPAA** - Health Insurance Portability and Accountability Act - It was created primarily to modernize the flow of healthcare information, stipulate how personally identifiable information maintained by the healthcare and healthcare insurance industries should be protected from fraud and theft.
+
+**NIST** - NIST Special Publication 800-53 provides a catalog of security and privacy controls for all U.S. federal information systems except those related to national security. It develops and issues standards, guidelines, and other publications to assist federal agencies in implementing the Federal Information Security Modernization Act of 2014 (FISMA) and to help with managing cost-effective programs to protect their information and information systems.
 
 **FISMA** - The Federal Information Security Management Act - The act requires each federal agency to develop, document, and implement an agency-wide program to provide information security. 
 
@@ -356,13 +377,15 @@ generic processes for the management of IT, with each process defined together w
 
 **IRC** - Internet Relay Chat - It is an application layer protocol that facilitates communication in text. The chat process works on a client/server networking model.
 
-**IPsec** - Internet Protocol Security - It  is a secure network protocol suite that authenticates and encrypts the packets of data to provide secure encrypted communication between two computers over an Internet Protocol network. It is used in virtual private networks (VPNs).
+**IPsec** - Internet Protocol Security - It is a secure network protocol suite that authenticates and encrypts the packets of data to provide secure encrypted communication between two computers over an Internet Protocol network. It is used in virtual private networks (VPNs). It works on the network layer. 
 
 **PPP** - Point-to-Point Protocol - It is a Data link layer (layer 2) communications protocol between two routers directly without any host or any other networking in between. It can provide connection authentication, transmission encryption, and compression.
 
 **PEM** - Privacy-Enhanced Mail - It is a file format for storing and sending cryptographic keys, certificates, and other data.  While the original standards were never broadly adopted, and were supplanted by PGP and S/MIME, the textual encoding they defined became very popular. The PEM format was eventually formalized by the IETF in RFC 7468.
 
 **SET** - Secure Electronic Transaction - It is a communications protocol standard for securing credit card transactions over networks, specifically, the Internet. It is a set of security protocols and formats that enabled users to employ the existing credit card payment infrastructure on an open network in a secure fashion. However, it failed to gain attraction in the market. Visa now promotes the 3-D Secure scheme.
+
+**PCI-DSS** - Payment Card Industry Data Security Standard - It is an information security standard for organizations that handle branded credit cards from the major card schemes.
 
 ### IoT
 
@@ -382,3 +405,10 @@ generic processes for the management of IT, with each process defined together w
 **ARO** - Annual rate of occurrence - The expected value (cost) of a yearly occurrence of incidents of given type (e.g. the chance of a HW to have a failure).
 
 **ALE** - Annual Loss Expectancy = SLE * ARO
+
+**Risk mitigation** - It can be defined as taking steps to reduce adverse effects. There are four types of risk mitigation strategies that hold unique to Business Continuity and Disaster Recovery.
+
+    - Risk Acceptance: This strategy is a common option when the cost of other risk management options such as avoidance or limitation may outweigh the cost of the risk itself.
+    - Risk Avoidance: It the opposite of risk acceptance. It is the action that avoids any exposure to the risk whatsoever. It the most expensive choice.
+    - Risk Limitation: This strategy limits a company’s exposure by taking some action. It is a strategy employing a bit of risk acceptance and a bit of risk avoidance or an average of both.
+    - Risk Transference: It is the involvement of handing risk off to a willing third party.
