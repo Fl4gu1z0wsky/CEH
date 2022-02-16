@@ -9,17 +9,17 @@ The terminology and the information are from :
 
 **Nmap** – to scan open port (old name was Ethereal)   
 
-    -sS (TCP SYN (Stealth) Scan). It is the fastest and most popular way to scan a target. It uses the SYN scan which is unobtrusive and stealthy as it never 
-    -sT (TCP Connect Scan). When SYN scan is not an option, and we don't have raw packets priv. or we want to scan IPv6 network. It establishes a connection with     
+   -sS (TCP SYN (Stealth) Scan). It is the fastest and most popular way to scan a target. It uses the SYN scan which is unobtrusive and stealthy as it never 
+   -sT (TCP Connect Scan). When SYN scan is not an option, and we don't have raw packets priv. or we want to scan IPv6 network. It establishes a connection with     
     the target machine and port with a handshake. It uses the Berkley Sockets API. However nmap uses this API to obtain status information on each connection attempt.
-    -F (Fast (limited port) scan). It scans normally 1000 most common port but here it is reduced to 100.
+   -F (Fast (limited port) scan). It scans normally 1000 most common port but here it is reduced to 100.
     complete the full TCP handshake connexion. It also allows clear, reliable differentiation between open, closed, and filtered states.
-    -sU (UDP Scan). It is generaly slower but we should'nt neglect the UDC ports. DNS, SNMP, and DHCP (registered ports 53, 161/162, and 67/68) are three of the most common.
-    -sM (TCP Maimon Scan). Named after its discoverer, Uriel Maimon. Same as NULL, FIN, and Xmas scan, except that the probe is FIN/ACK. We send the FIN/ACK and a response   
+   -sU (UDP Scan). It is generaly slower but we should'nt neglect the UDC ports. DNS, SNMP, and DHCP (registered ports 53, 161/162, and 67/68) are three of the most common.
+   -sM (TCP Maimon Scan). Named after its discoverer, Uriel Maimon. Same as NULL, FIN, and Xmas scan, except that the probe is FIN/ACK. We send the FIN/ACK and a response   
     RST should be send. However if the port is OPEN/FILTERED, it often drop the packet.
-    -oX Requests that XML output be directed to the given filename.
-    -oG (grepable output). It is a simple format that lists each host on one line and can be trivially searched and parsed with standard Unix tools such as grep, awk, cut, sed, diff, and Perl.
-    -sX (Xmas scan). Sets the FIN, PSH, and URG flags, lighting the packet up like a Christmas tree.
+   -oX Requests that XML output be directed to the given filename.
+   -oG (grepable output). It is a simple format that lists each host on one line and can be trivially searched and parsed with standard Unix tools such as grep, awk, cut, sed, diff, and Perl.
+   -sX (Xmas scan). Sets the FIN, PSH, and URG flags, lighting the packet up like a Christmas tree.
   
 **Tcpdump** – wireshark but for CLI (no graphic)
 
@@ -33,18 +33,18 @@ The terminology and the information are from :
 
 **Metasploit** - Used for pentesting nearly everything.
 
-    - Auxiliary modules: do not require the use of a payload to run like exploit modules. These types of modules include useful programs such as scanners, fuzzier, and SQL injection tools. Penetration testers use the plethora of scanners in the auxiliary directory to gather a deep understanding of the system to be attacked and then transition to exploit modules.
-    - Exploit modules: are pieces of code within the database that when running on a victim computer, the attacker will attempt to leverage a vulnerability on the local or remote system compromising the payload module such as the Meterpreter shell.
-    - Payload Module: A payload is generally attached to the exploit before its execution. The payload contains the set of instructions that the victim’s computer is to carry out after compromise (Bind Shells, Reverse Shells, Meterpreter Shell).
-    - NOPS Module: level language (assembly language). It simply slides the program execution to the next memory address. NOPs are commonly used before the start of the ShellCode to ensure its successful execution in the memory while performing no operations and just sliding through the memory addresses. The \x90 instruction represents a NOP instruction in the hexadecimal format.
+   **Auxiliary modules**: do not require the use of a payload to run like exploit modules. These types of modules include useful programs such as scanners, fuzzier, and SQL injection tools. Penetration testers use the plethora of scanners in the auxiliary directory to gather a deep understanding of the system to be attacked and then transition to exploit modules.
+   **Exploit modules**: are pieces of code within the database that when running on a victim computer, the attacker will attempt to leverage a vulnerability on the local or remote system compromising the payload module such as the Meterpreter shell.
+   **Payload Module**: A payload is generally attached to the exploit before its execution. The payload contains the set of instructions that the victim’s computer is to carry out after compromise (Bind Shells, Reverse Shells, Meterpreter Shell).
+   **NOPS Module**: level language (assembly language). It simply slides the program execution to the next memory address. NOPs are commonly used before the start of the ShellCode to ensure its successful execution in the memory while performing no operations and just sliding through the memory addresses. The \x90 instruction represents a NOP instruction in the hexadecimal format.
     
 **Aircrack-ng** - It is a network software suite consisting of a detector, packet sniffer, WEP and WPA/WPA2-PSK cracker and analysis tool for 802.11 wireless LANs. It works with any wireless network interface controller whose driver supports raw monitoring mode and can sniff 802.11a, 802.11b and 802.11g traffic. 
 
 **Snort** - It is a free open source network intrusion detection system (IDS) and intrusion prevention system (IPS). The program can also be used to detect probes or attacks, including, but not limited to, operating system fingerprinting attempts, semantic URL attacks, buffer overflows, server message block probes, and stealth port scans.
 
-    - Sniffer Mode: The program will read network packets and display them on the console.
-    - Packet Logger Mode: In packet logger mode, the program will log packets to the disk.
-    - Network Intrusion Detection System Mode: In intrusion detection mode, the program will monitor network traffic and analyze it against a rule set defined by the user. The program will then perform a specific action based on what has been identified.
+   **Sniffer Mode**: The program will read network packets and display them on the console.
+   **Packet Logger Mode**: In packet logger mode, the program will log packets to the disk.
+   **Network Intrusion Detection System Mode**: In intrusion detection mode, the program will monitor network traffic and analyze it against a rule set defined by the user. The program will then perform a specific action based on what has been identified.
     
 **Cain & Abel** - It is a password recovery tool for Microsoft Windows. It can recover many kinds of passwords using methods such as network packet sniffing, cracking various password hashes by using methods such as dictionary attacks, brute force and cryptanalysis attacks.
 
@@ -57,10 +57,10 @@ The terminology and the information are from :
 
 **Google Dork** - Used for OSINT.
 
-    site: - Limit results to those from a specific website.
-    inurl: - Find pages with a certain word (or words) in the URL.
-    link: - Find pages linking to a specific domain or URL. Google killed this operator in 2017, but it does still show some results.
-    cache: - Returns the most recent cached version of a web page (providing the page is indexed, of course).
+   **site**: Limit results to those from a specific website.
+   **inurl**: Find pages with a certain word (or words) in the URL.
+   **link**: Find pages linking to a specific domain or URL. Google killed this operator in 2017, but it does still show some results.
+   **cache**: Returns the most recent cached version of a web page (providing the page is indexed, of course).
 
 ### Scan
 
