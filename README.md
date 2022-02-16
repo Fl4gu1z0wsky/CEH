@@ -209,7 +209,7 @@ and the it becomes unavailable.
 
 ### Network
 
-**Sybil attack** -  This is defined as a small number of entities counterfeiting multiple peer identities so as to compromise a disproportionate share of the system.
+**Sybil attack** -  Sybil Attack is a type of attack seen in peer-to-peer networks in which a node in the network operates multiple identities actively at the same time and undermines the authority/power in reputation systems. The main aim of this attack is to gain the majority of influence in the network to carry out illegal(with respect to rules and laws set in the network) actions in the system.
 
 **WHOIS** - is a query and response protocol that is widely used for querying databases that store the registered users or assignees of an Internet resource, such as a domain name, an IP address block or an autonomous system, but is also used for a wider range of other information.
 
@@ -292,10 +292,14 @@ and the it becomes unavailable.
 
 **HoneyPot** - It is a decoy system or servers deployed alongside production systems within the network. When deployed as enticing targets for attackers, honeypots can add security monitoring opportunities for blue teams and misdirect the adversary from their true target.
 
-    - Pure honeypots: The attacker's activities are monitored by using a bug tap installed on the honeypot's link to the network. No other software needs to be installed.
-    - Low-interaction Honeypots: It will only give an attacker minimal access to the operating system. ‘Low interaction’ means precisely that the adversary will not be able to interact with your decoy system in any depth, as it is a much more static environment.
-    - High interaction honeypots: It emulates certain protocols or services. The attacker is provided with real systems to attack, making it far less likely they will guess they are being diverted or observed. As the systems are only present as a decoy, any traffic that is found is by its very existence malicious, making it easy to spot threats and track and trace an attacker's behavior.
-    - Research honeypots: They are run to gather information about the black hat community's motives and tactics targeting different networks. These honeypots do not add direct value to a specific organization; instead, they are used to research the threats that organizations face and to learn how to better protect against those threats.
+   1. Pure honeypots: The attacker's activities are monitored by using a bug tap installed on the honeypot's link to the network. No other software needs to be installed.
+   2. Low-interaction Honeypots: It will only give an attacker minimal access to the operating system. ‘Low interaction’ means precisely that the adversary will not be able to interact with your decoy system in any depth, as it is a much more static environment.
+   3. High interaction honeypots: It emulates certain protocols or services. The attacker is provided with real systems to attack, making it far less likely they will guess they are being diverted or observed. As the systems are only present as a decoy, any traffic that is found is by its very existence malicious, making it easy to spot threats and track and trace an attacker's behavior.
+   4. Research honeypots: They are run to gather information about the black hat community's motives and tactics targeting different networks. These honeypots do not add direct value to a specific organization; instead, they are used to research the threats that organizations face and to learn how to better protect against those threats.
+    
+**DAI** - Dynamic arp inspection - protects switching devices against Address Resolution Protocol (ARP) packet spoofing (also known as ARP poisoning or ARP cache poisoning). It  inspects ARPs on the LAN and uses the information in the DHCP snooping database on the switch to validate ARP packets and to protect against ARP spoofing.
+
+**Port security** - It helps secure the network by preventing unknown devices to connect to a port. You can limit the number of MAC addresses on a given port. Packets that have a matching MAC address (secure packets) are forwarded; all other packets (unsecure packets) are restricted. You can enable port security on a per port basis. There is 2 modes: Dynamic (learn automatically a certain number of MAC adresses) or Static (we have to specify the MAC).
 
 ### Security test
 
