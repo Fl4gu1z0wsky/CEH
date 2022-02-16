@@ -12,6 +12,9 @@ The terminology and the information are from :
    -sS (TCP SYN (Stealth) Scan). It is the fastest and most popular way to scan a target. It uses the SYN scan which is unobtrusive and stealthy as it never 
    -sT (TCP Connect Scan). When SYN scan is not an option, and we don't have raw packets priv. or we want to scan IPv6 network. It establishes a connection with     
     the target machine and port with a handshake. It uses the Berkley Sockets API. However nmap uses this API to obtain status information on each connection attempt.
+   -sA (TCP ACK scan). Used to see stateful or not and which ports are filtered.
+   -sV (version detection).
+   -sP (Skip port scan). Does not scan but sends back the live hosts.
    -F (Fast (limited port) scan). It scans normally 1000 most common port but here it is reduced to 100.
     complete the full TCP handshake connexion. It also allows clear, reliable differentiation between open, closed, and filtered states.
    -sU (UDP Scan). It is generaly slower but we should'nt neglect the UDC ports. DNS, SNMP, and DHCP (registered ports 53, 161/162, and 67/68) are three of the most common.
@@ -20,6 +23,12 @@ The terminology and the information are from :
    -oX Requests that XML output be directed to the given filename.
    -oG (grepable output). It is a simple format that lists each host on one line and can be trivially searched and parsed with standard Unix tools such as grep, awk, cut, sed, diff, and Perl.
    -sX (Xmas scan). Sets the FIN, PSH, and URG flags, lighting the packet up like a Christmas tree.
+   
+**Ports**
+
+   - DNS : 53
+   - NTM : 123 (Network Time Protocol)
+   - SNMP : 161
   
 **Tcpdump** – wireshark but for CLI (no graphic)
 
@@ -189,6 +198,10 @@ and the it becomes unavailable.
 
 **Website defacement vulnerability** - It is the unauthorized modification of web pages, including the addition, removal, or alteration of existing content. These attacks are commonly carried out by hacktivists.
 
+**Hidden Field Manipulation** - An adversary exploits a weakness in the server's trust of client-side processing by modifying data on the client-side, such as price information, and then submitting this data to the server, which processes the modified data.
+
+**Web Parameter Tampering** - It is based on manipulating parameters exchanged between client and server to modify application data, such as user credentials and permissions, price and quantity of products, etc.
+
 ### USB
 
 **Juice jacking** - An infected USB charging station is used to compromise linked devices.
@@ -244,6 +257,8 @@ and the it becomes unavailable.
 **POODLE** - Padding Oracle On Downgraded Legacy Encryption - It is a man-in-the-middle exploit which takes advantage of Internet and security software clients' fallback to SSL 3.0. If attackers successfully exploit this vulnerability, on average, they only need to make 256 SSL 3.0 requests to reveal one byte of encrypted messages.
 
 **Fuzzing** - A Black Box software testing technique, which basically consists in finding implementation bugs using malformed/semi-malformed data injection in an automated fashion.
+
+**Registration** - The attacker registers himself as the targeted VoIP user. If successful, all the incoming calls to the victim VoIP user will be routed to the VoIP phone chosen.
 
 **Rootkit** - Malicious software that provides root-level, privileged access to a computer while hiding its existence and actions. Hackers use rootkits to conceal themselves until they decide to execute their malicious malware. The list below show what can be done with a rootkit:
 
