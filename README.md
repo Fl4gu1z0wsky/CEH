@@ -229,9 +229,9 @@ and the it becomes unavailable.
 
 **Vulnerability scanning** - A vulnerability penetration test on the organizational network in three steps.
 
-    - Locating nodes: The first step in vulnerability scanning is to locate live hosts in the target network using various scanning techniques.
-    - Performing service and OS discovery on them: After detecting the live hosts in the target network, the next step is to enumerate the open ports and services and the operating system on the target systems.
-    - Testing those services and OS for known vulnerabilities: Finally, after identifying the open services and the operating system running on the target nodes, they are tested for known vulnerabilities.
+   - **Locating nodes**: The first step in vulnerability scanning is to locate live hosts in the target network using various scanning techniques.
+   - **Performing service and OS discovery on them**: After detecting the live hosts in the target network, the next step is to enumerate the open ports and services and the operating system on the target systems.
+   - **Testing those services and OS for known vulnerabilities**: Finally, after identifying the open services and the operating system running on the target nodes, they are tested for known vulnerabilities.
 
 ### Others
 
@@ -247,11 +247,11 @@ and the it becomes unavailable.
 
 **Rootkit** - Malicious software that provides root-level, privileged access to a computer while hiding its existence and actions. Hackers use rootkits to conceal themselves until they decide to execute their malicious malware. The list below show what can be done with a rootkit:
 
-    - Sensitive data stolen
-    - Malware infection
-    - File removal
-    - Eavesdropping
-    - Remote control
+   - Sensitive data stolen
+   - Malware infection
+   - File removal
+   - Eavesdropping
+   - Remote control
     
 
 ## :lock: SECURITY
@@ -262,15 +262,11 @@ and the it becomes unavailable.
 
 ### Router
 
-    Counter methods:
-    - Configuration modification : We must secure the router and the supporting system it makes use of, such as TFTP servers (used to upgrade several routers that   
-    are separated from the TFTP server by slow WAN connections).
-    - Introduction of a rogue router that : The other routing devices must trust the send information. We can block it by adding message authentication to the routing   
-    protocol. And we can also add ACLs to block routing protocol messages unwanted.
-    - Spoofing a valid routing protocol message or modifying a valid message in transit. We can prevent it with message authentication as well. And if we have a transport    
-    layer protocol like TCP for BGP, it can render the task difficult due to the pseudo-random initial sequence numbers.
-    - Sending of malformed or excess packets. Excess packets can be stopped with DoS mitigation techniques. Malformed packets are harder to identify. This is     
-    an area of computer security that needs increased attention, not just in routing protocols but in all network applications.
+   Counter methods:
+   - **Configuration modification** : We must secure the router and the supporting system it makes use of, such as TFTP servers (used to upgrade several routers that are separated from the TFTP server by slow WAN connections).
+   - **Introduction of a rogue router** : The other routing devices must trust the send information. We can block it by adding message authentication to the routing protocol. And we can also add ACLs to block routing protocol messages unwanted.
+   - **Spoofing a valid routing protocol message or modifying a valid message in transit** : We can prevent it with message authentication as well. And if we have a transport   layer protocol like TCP for BGP, it can render the task difficult due to the pseudo-random initial sequence numbers.
+   - **Sending of malformed or excess packets** : Excess packets can be stopped with DoS mitigation techniques. Malformed packets are harder to identify. This is an area of computer security that needs increased attention, not just in routing protocols but in all network applications.
 
 ### Cryptography
 
@@ -393,10 +389,10 @@ generic processes for the management of IT, with each process defined together w
 
 ### IoT
 
-    - The first layer consists of Sensor-connected IOT devices: These are the small, memory-constrained, often battery-operated electronics devices with onboard sensors and actuators. They must sense and record data, perform light computing and being able to connect to a network and communicate the data.
-    - The second layer consists of IOT gateway devices: Layer 1 need to be connected to the internet via a more powerful computing device called the IOT gateway. It aggregates data from numerous sensing devices and relays it to the cloud. They must be equipped with multiple communication capabilities like Bluetooth, Zigbee, LoRa WAN, Sub-GHz proprietary protocols.
-    - The third layer is the Cloud: All the sensor data relayed by IOT gateways is stored on cloud hosted servers. These servers accept, store and process data for analysis and decision making. This layer also enables creation of live dashboards which decision makers can monitor and take proactive data driven decisions
-    - The forth layer is IOT Analytics: The collected raw data is converted into actionable business insights, which can help improve business operations, efficiency or even predict future events like machine failure.
+   - **The first layer consists of Sensor-connected IOT devices**: These are the small, memory-constrained, often battery-operated electronics devices with onboard sensors and actuators. They must sense and record data, perform light computing and being able to connect to a network and communicate the data.
+   - **The second layer consists of IOT gateway devices**: Layer 1 need to be connected to the internet via a more powerful computing device called the IOT gateway. It aggregates data from numerous sensing devices and relays it to the cloud. They must be equipped with multiple communication capabilities like Bluetooth, Zigbee, LoRa WAN, Sub-GHz proprietary protocols.
+   - **The third layer is the Cloud**: All the sensor data relayed by IOT gateways is stored on cloud hosted servers. These servers accept, store and process data for analysis and decision making. This layer also enables creation of live dashboards which decision makers can monitor and take proactive data driven decisions
+   - **The forth layer is IOT Analytics**: The collected raw data is converted into actionable business insights, which can help improve business operations, efficiency or even predict future events like machine failure.
 
 ## :bulb: MANAGEMENT
 
@@ -412,7 +408,7 @@ generic processes for the management of IT, with each process defined together w
 
 **Risk mitigation** - It can be defined as taking steps to reduce adverse effects. There are four types of risk mitigation strategies that hold unique to Business Continuity and Disaster Recovery.
 
-    - Risk Acceptance: This strategy is a common option when the cost of other risk management options such as avoidance or limitation may outweigh the cost of the risk itself.
-    - Risk Avoidance: It the opposite of risk acceptance. It is the action that avoids any exposure to the risk whatsoever. It the most expensive choice.
-    - Risk Limitation: This strategy limits a company’s exposure by taking some action. It is a strategy employing a bit of risk acceptance and a bit of risk avoidance or an average of both.
-    - Risk Transference: It is the involvement of handing risk off to a willing third party.
+   - **Risk Acceptance**: This strategy is a common option when the cost of other risk management options such as avoidance or limitation may outweigh the cost of the risk itself.
+   - **Risk Avoidance**: It the opposite of risk acceptance. It is the action that avoids any exposure to the risk whatsoever. It the most expensive choice.
+   - **Risk Limitation**: This strategy limits a company’s exposure by taking some action. It is a strategy employing a bit of risk acceptance and a bit of risk avoidance or an average of both.
+   - **Risk Transference**: It is the involvement of handing risk off to a willing third party.
