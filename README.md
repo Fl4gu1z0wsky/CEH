@@ -9,20 +9,20 @@ The terminology and the information are from :
 
 **Nmap** – to scan open port (old name was Ethereal)   
 
-   -sS (TCP SYN (Stealth) Scan). It is the fastest and most popular way to scan a target. It uses the SYN scan which is unobtrusive and stealthy as it never 
-   -sT (TCP Connect Scan). When SYN scan is not an option, and we don't have raw packets priv. or we want to scan IPv6 network. It establishes a connection with     
-    the target machine and port with a handshake. It uses the Berkley Sockets API. However nmap uses this API to obtain status information on each connection attempt.
-   -sA (TCP ACK scan). Used to see stateful or not and which ports are filtered.
-   -sV (version detection).
-   -sP (Skip port scan). Does not scan but sends back the live hosts.
-   -F (Fast (limited port) scan). It scans normally 1000 most common port but here it is reduced to 100.
-    complete the full TCP handshake connexion. It also allows clear, reliable differentiation between open, closed, and filtered states.
-   -sU (UDP Scan). It is generaly slower but we should'nt neglect the UDC ports. DNS, SNMP, and DHCP (registered ports 53, 161/162, and 67/68) are three of the most common.
+   -sS (TCP SYN (Stealth) Scan). It is the fastest and most popular way to scan a target. It uses the SYN scan which is unobtrusive and stealthy as it never    
+   -sT (TCP Connect Scan). When SYN scan is not an option, and we don't have raw packets priv. or we want to scan IPv6 network. It establishes a connection with         
+    the target machine and port with a handshake. It uses the Berkley Sockets API. However nmap uses this API to obtain status information on each connection attempt.   
+   -sA (TCP ACK scan). Used to see stateful or not and which ports are filtered.   
+   -sV (version detection).   
+   -sP (Skip port scan). Does not scan but sends back the live hosts.    
+   -F (Fast (limited port) scan). It scans normally 1000 most common port but here it is reduced to 100.   
+    complete the full TCP handshake connexion. It also allows clear, reliable differentiation between open, closed, and filtered states.    
+   -sU (UDP Scan). It is generaly slower but we should'nt neglect the UDC ports. DNS, SNMP, and DHCP (registered ports 53, 161/162, and 67/68) are three of the most common.    
    -sM (TCP Maimon Scan). Named after its discoverer, Uriel Maimon. Same as NULL, FIN, and Xmas scan, except that the probe is FIN/ACK. We send the FIN/ACK and a response   
-    RST should be send. However if the port is OPEN/FILTERED, it often drop the packet.
-   -oX Requests that XML output be directed to the given filename.
-   -oG (grepable output). It is a simple format that lists each host on one line and can be trivially searched and parsed with standard Unix tools such as grep, awk, cut, sed, diff, and Perl.
-   -sX (Xmas scan). Sets the FIN, PSH, and URG flags, lighting the packet up like a Christmas tree.
+    RST should be send. However if the port is OPEN/FILTERED, it often drop the packet.    
+   -oX Requests that XML output be directed to the given filename.   
+   -oG (grepable output). It is a simple format that lists each host on one line and can be trivially searched and parsed with standard Unix tools such as grep, awk, cut, sed, diff, and Perl.   
+   -sX (Xmas scan). Sets the FIN, PSH, and URG flags, lighting the packet up like a Christmas tree.    
    
 **Ports**
 
