@@ -23,6 +23,9 @@ The terminology and the information are from :
    -oX Requests that XML output be directed to the given filename.   
    -oG (grepable output). It is a simple format that lists each host on one line and can be trivially searched and parsed with standard Unix tools such as grep, awk, cut, sed, diff, and Perl.   
    -sX (Xmas scan). Sets the FIN, PSH, and URG flags, lighting the packet up like a Christmas tree.    
+   -T (can go from 0 to 5, e.g. -T4) To increase the speed and intensity of the scan.    
+   -p <port ranges> Only scan specified ports.    
+   -r (Don't randomize ports).    
    
 **Ports**
 
@@ -56,7 +59,8 @@ The terminology and the information are from :
    **Network Intrusion Detection System Mode**: In intrusion detection mode, the program will monitor network traffic and analyze it against a rule set defined by the user. The program will then perform a specific action based on what has been identified.
     
 **Cain & Abel** - It is a password recovery tool for Microsoft Windows. It can recover many kinds of passwords using methods such as network packet sniffing, cracking various password hashes by using methods such as dictionary attacks, brute force and cryptanalysis attacks.
-
+   
+**Kisnet** - It is a network detector, packet sniffer, and IDS for 802.11 wireless LANs. Kismet will work with any wireless card which supports raw monitoring mode, and can sniff 802.11a, 802.11b, 802.11g, and 802.11n traffic.
 
 ## :warning: ATTACKS
 
@@ -202,6 +206,8 @@ and the it becomes unavailable.
 
 **Web Parameter Tampering** - It is based on manipulating parameters exchanged between client and server to modify application data, such as user credentials and permissions, price and quantity of products, etc.
 
+**CRLF** - Carriage Return and Line Feed - Exploits occur when an attacker is able to inject a CRLF sequence into an HTTP stream. By introducing this unexpected CRLF injection, the attacker is able to maliciously exploit CRLF vulnerabilities in order to manipulate the web application's functions.
+
 ### USB
 
 **Juice jacking** - An infected USB charging station is used to compromise linked devices.
@@ -219,6 +225,8 @@ and the it becomes unavailable.
 **Quid pro quo** - Aka “something for something”. Instead of baiting a target with the promise of a good, a quid pro quo attack promises a service or a benefit based on a specific action's execution. In a quid pro quo attack scenario, the hacker offers a service or benefit in exchange for information or access (e.g. helping for downloading a major update).
 
 **Ellicitation** - Elicitation means to bring or draw out or arrive at a conclusion (truth, for instance) by logic. In training materials, the National Security Agency of the United States government defines elicitation as "the subtle extraction of information during an apparently normal and innocent conversation." It can occur at a restaurant, a bar, a daycare, ...
+   
+**Eavesdropping** - It is the act of secretly or stealthily listening to the private conversation or communications of others without their consent in order to gather information.
 
 ### Network
 
@@ -245,7 +253,11 @@ and the it becomes unavailable.
    - **Locating nodes**: The first step in vulnerability scanning is to locate live hosts in the target network using various scanning techniques.
    - **Performing service and OS discovery on them**: After detecting the live hosts in the target network, the next step is to enumerate the open ports and services and the operating system on the target systems.
    - **Testing those services and OS for known vulnerabilities**: Finally, after identifying the open services and the operating system running on the target nodes, they are tested for known vulnerabilities.
-
+   
+**Slowloris** - A single machine tries to keep many connections to the target web server open and hold them open as long as possible with partial request.
+   
+**Spoofed Session Flood** - Fake Session attacks try to bypass security (only monitoring incoming traffic on the network) under the disguise of a valid TCP session by carrying an SYN, multiple ACK and one or more RST or FIN packets. It can also bring a complete shutdown of the system.   
+   
 ### Others
 
 **Side-channel** - This is an attack based on information gained from the implementation of a computer system. Timing information, power consumption, electromagnetic leaks or even sound can provide an extra source of information, which can be exploited.
@@ -268,7 +280,12 @@ and the it becomes unavailable.
    - Eavesdropping
    - Remote control
     
-
+**Viruses** - Here's different types of viruses:
+   1. Tunneling Virus - This virus attempts to bypass detection by antivirus scanner by installing itself in the interrupt handler chain. Interception programs, which remain in the background of an operating system and catch viruses, become disabled during the course of a tunneling virus. Similar viruses install themselves in device drivers.
+   2. Stealth Virus - It is a very tricky virus as it changes the code that can be used to detect it. Hence, the detection of the virus becomes very difficult. For example, it can change the read system call such that whenever the user asks to read a code modified by a virus, the original form of code is shown rather than infected code.
+   3. Cavity virus - Some viruses can infect files without increasing their sizes or damaging the files. They accomplish this by overwriting unused areas of executable files. These are called cavity viruses.
+   4. Polymorphic virus - Just like regular encrypted viruses, a polymorphic virus infects files with an encrypted copy of itself, which is decoded by a decryption module. In the case of polymorphic viruses, however, this decryption module is also modified on each infection. A well-written polymorphic virus therefore has no parts which remain identical between infections, making it very difficult to detect directly using "signatures".
+   
 ## :lock: SECURITY
 
 ### WIFI
@@ -400,7 +417,25 @@ generic processes for the management of IT, with each process defined together w
 
 **SET** - Secure Electronic Transaction - It is a communications protocol standard for securing credit card transactions over networks, specifically, the Internet. It is a set of security protocols and formats that enabled users to employ the existing credit card payment infrastructure on an open network in a secure fashion. However, it failed to gain attraction in the market. Visa now promotes the 3-D Secure scheme.
 
-**PCI-DSS** - Payment Card Industry Data Security Standard - It is an information security standard for organizations that handle branded credit cards from the major card schemes.
+**PCI-DSS** - Payment Card Industry Data Security Standard - It is an information security standard for organizations that handle branded credit cards from the major card schemes. On the clause 11.3 it is said: "Perform external penetration testing at least annually and after any significant infrastructure or application upgrade or modification". Here are some reommandation:     
+**Build and Maintain a Secure Network**  
+1. Install and maintain a firewall configuration to protect cardholder data.
+2. Do not use vendor-supplied defaults for system passwords and other security parameters.     
+**Protect Cardholder Data**    
+3. Protect stored cardholder data.
+4. Encrypt transmission of cardholder data across open, public networks.   
+**Maintain a Vulnerability Management Program**    
+5. Use and regularly update anti-virus software or programs.
+6. Develop and maintain secure systems and applications.   
+**Implement Strong Access Control Measures**    
+7. Restrict access to cardholder data by business need-to-know.
+8. Assign a unique ID to each person with computer access.
+9. Restrict physical access to cardholder data.   
+**Regularly Monitor and Test Networks**    
+10. Track and monitor all access to network resources and cardholder data.
+11. Regularly test security systems and processes.   
+**Maintain an Information Security Policy**   
+12. Maintain a policy that addresses information security for employees and contractors.
 
 ### IoT
 
