@@ -462,3 +462,5 @@ generic processes for the management of IT, with each process defined together w
    - **Risk Avoidance**: It the opposite of risk acceptance. It is the action that avoids any exposure to the risk whatsoever. It the most expensive choice.
    - **Risk Limitation**: This strategy limits a company’s exposure by taking some action. It is a strategy employing a bit of risk acceptance and a bit of risk avoidance or an average of both.
    - **Risk Transference**: It is the involvement of handing risk off to a willing third party.
+   
+**Residual Risk** - It is the amount of risk left over after natural or inherent risks have been reduced by risk controls. Residual risk = (Inherent risk) – (impact of risk controls).  
