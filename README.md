@@ -61,6 +61,8 @@ The terminology and the information are from :
 **Cain & Abel** - It is a password recovery tool for Microsoft Windows. It can recover many kinds of passwords using methods such as network packet sniffing, cracking various password hashes by using methods such as dictionary attacks, brute force and cryptanalysis attacks.
    
 **Kisnet** - It is a network detector, packet sniffer, and IDS for 802.11 wireless LANs. Kismet will work with any wireless card which supports raw monitoring mode, and can sniff 802.11a, 802.11b, 802.11g, and 802.11n traffic.
+   
+**Nikto** - It is a free software command-line vulnerability scanner that scans web servers for dangerous files/CGIs, outdated server software, and other problems.
 
 ## :warning: ATTACKS
 
@@ -74,6 +76,8 @@ The terminology and the information are from :
    **inurl**: Find pages with a certain word (or words) in the URL.
    **link**: Find pages linking to a specific domain or URL. Google killed this operator in 2017, but it does still show some results.
    **cache**: Returns the most recent cached version of a web page (providing the page is indexed, of course).
+   **ext**: the extension of a file
+   **filetype**: the type of file
 
 ### Scan
 
@@ -229,6 +233,8 @@ and the it becomes unavailable.
 **Eavesdropping** - It is the act of secretly or stealthily listening to the private conversation or communications of others without their consent in order to gather information.
 
 ### Network
+   
+**Replay Attack** - aka playback attack - It is a form of network attack in which a valid data transmission is maliciously or fraudulently repeated or delayed.
 
 **Sybil attack** -  Sybil Attack is a type of attack seen in peer-to-peer networks in which a node in the network operates multiple identities actively at the same time and undermines the authority/power in reputation systems. The main aim of this attack is to gain the majority of influence in the network to carry out illegal(with respect to rules and laws set in the network) actions in the system.
 
@@ -286,6 +292,10 @@ and the it becomes unavailable.
    3. Cavity virus - Some viruses can infect files without increasing their sizes or damaging the files. They accomplish this by overwriting unused areas of executable files. These are called cavity viruses.
    4. Polymorphic virus - Just like regular encrypted viruses, a polymorphic virus infects files with an encrypted copy of itself, which is decoded by a decryption module. In the case of polymorphic viruses, however, this decryption module is also modified on each infection. A well-written polymorphic virus therefore has no parts which remain identical between infections, making it very difficult to detect directly using "signatures".
    
+**Meet-in-the-middle attack** - It is a generic space–time tradeoff cryptographic attack against encryption schemes that rely on performing multiple encryption operations in sequence. The MITM attack is the primary reason why Double DES is not used and why a Triple DES key (168-bit) can be bruteforced by an attacker with 256 space and 2112 operations.
+   
+**Rubber-Hose** - In this attack, the cryptanalyst uses blackmail, threats, torture, extortion, bribery, etc. A powerful and often the most effective cryptanalysis method.
+   
 ## :lock: SECURITY
 
 ### WIFI
@@ -312,6 +322,13 @@ and the it becomes unavailable.
 
 ### Network
 
+**Firewall detection** - There is 4 types of detection a firewall can be based on.
+   
+   - **Cloud-based**: It identifies malware by collecting data from protected computers while analyzing it on the provider’s infrastructure instead of locally.
+   - **Behavioral-based**: It observes how the program executes, rather than merely emulating its execution. This approach attempts to identify malware by looking for suspicious behaviors, such as unpacking of malcode, modifying the hosts file, or observing keystrokes.
+   - **Heuristics-based **: It aims at generically detecting new malware by statically examining files for suspicious characteristics without an exact signature match. For instance, an antivirus tool might look for the presence of rare instructions or junk code in the examined file.
+   - **Real-time**: It is a security feature that helps stop malware from being installed on your device. This feature is built into Microsoft Defender.
+   
 **Software Firewall** - It is placed between the normal application and the networking components of the operating system and regulates data traffic through two things: port numbers, and applications. Depending on your firewall settings, your firewall could stop programs from accessing the Internet, and/or block incoming or outgoing access via ports.
 
 **DMZ** - demilitarized zone - functions as a subnetwork containing an organization's exposed, outward-facing services. It acts as the exposed point to untrusted networks, commonly the Internet. The goal of a DMZ is to add an extra layer of security to an organization's local area network. A protected and monitored network node that faces outside the internal network can access what is exposed in the DMZ. In contrast, the rest of the organization's network is safe behind a firewall.
@@ -404,6 +421,10 @@ generic processes for the management of IT, with each process defined together w
 **MD5** - It is a widely used hash function producing a 128-bit hash value. Although MD5 was initially designed to be used as a cryptographic hash function, it has been found to suffer from extensive vulnerabilities. It can still be used as a checksum to verify data integrity, but only against unintentional corruption.
 
 **SHA-1** - (Secure Hash Algorithm 1) It is a cryptographic hash function which takes an input and produces a 160-bit (20-byte) hash value known as a message digest – typically rendered as a hexadecimal number, 40 digits long.
+   
+**SHA-2** - It consists of six hash functions with digests (hash values) that are 224, 256, 384 or 512 bits: SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224, SHA-512/256. SHA-256 and SHA-512 are novel hash functions computed with 32-bit and 64-bit words.
+   
+**SHA-3** - Based on an instance of the KECCAK algorithm. It  consists of four cryptographic hash functions, called SHA3-224, SHA3-256, SHA3-384, and SHA3-512, and two extendable-output functions (XOFs), called SHAKE128 and SHAKE256.
 
 **RC5** - (Rivest Cipher) It is a symmetric-key block cipher notable for its simplicity. The Advanced Encryption Standard (AES) candidate RC6 was based on RC5.
 
