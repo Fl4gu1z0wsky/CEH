@@ -345,6 +345,13 @@ and the it becomes unavailable.
 **DAI** - Dynamic arp inspection - protects switching devices against Address Resolution Protocol (ARP) packet spoofing (also known as ARP poisoning or ARP cache poisoning). It  inspects ARPs on the LAN and uses the information in the DHCP snooping database on the switch to validate ARP packets and to protect against ARP spoofing.
 
 **Port security** - It helps secure the network by preventing unknown devices to connect to a port. You can limit the number of MAC addresses on a given port. Packets that have a matching MAC address (secure packets) are forwarded; all other packets (unsecure packets) are restricted. You can enable port security on a per port basis. There is 2 modes: Dynamic (learn automatically a certain number of MAC adresses) or Static (we have to specify the MAC).
+   
+**IPS/IDS** - Intrusion prevention/detection system
+   
+   **WIPS** - Wireless Intrusion Prevention System - It is a network device that monitors the radio spectrum for the presence of unauthorized access points (intrusion detection), and can automatically take countermeasures (intrusion prevention).
+   **HIDS** - host-based intrusion detection system - It is a system that is capable of monitoring and analyzing the internals of a computing system as well as the network packets on its network interfaces.
+   **NIDS** - Network intrusion detection systems - They are placed at a strategic point or points within the network to monitor traffic to and from all devices on the network.
+   **AIDS** - Anomaly-based intrusion detection systems - They were primarily introduced to detect unknown attacks, in part due to the rapid development of malware. The basic approach is to use machine learning to create a model of trustworthy activity, and then compare new behavior against this model. The model can be trained, however it can bring false positive. 
 
 ### Security test
 
