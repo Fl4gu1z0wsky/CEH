@@ -154,6 +154,14 @@ reconnaissance network security analysis technique that attempts to determine wh
 **Frequency Analysis** – It is the study of the frequency or letters or groups of letters in a cipher text. It works on the fact that, in any given stretch of written language, certain letters and combination of letters occur with varying frequencies.
 
 **Collision attack** - A collision attack on a cryptographic hash tries to find two inputs producing the same hash value.
+   
+   **adaptive chosen-plaintext attack** - The attacker has the ability to make his choice of the inputs to the encryption function based on the previous chosen-plaintext queries and their corresponding ciphertexts.
+   
+   **Chosen-plaintext attack** - It presumes that the attacker can obtain the ciphertexts for arbitrary plaintexts. The goal of the attack is to gain information that reduces the security of the encryption scheme.
+   
+   **Ciphertext-only attack** - The attacker is assumed to have access only to a set of ciphertexts. While the attacker has no channel providing access to the plaintext prior to encryption, in all practical ciphertext-only attacks, the attacker still has some knowledge of the plaintext.
+   
+   **Known-plaintext attack** - The attacker has access to both the plaintext (called a crib), and its encrypted version (ciphertext). These can be used to reveal further secret information such as secret keys and codebooks.
 
 ### WIFI
 
@@ -296,6 +304,13 @@ and the it becomes unavailable.
    
 **Rubber-Hose** - In this attack, the cryptanalyst uses blackmail, threats, torture, extortion, bribery, etc. A powerful and often the most effective cryptanalysis method.
    
+**JailBreaking** - It can be defined as a process of installing a modified set of kernel patches that allows users to run third party applications not signed by OS vendor.
+   
+   1. Userland Exploit: It allows user-level access but does not allow iboot-level access.    
+   2. iBoot Exploit: An iBoot jailbreak allows user-level and iboot-level access.   
+   3. Bootrom Exploit: It allows user-level access and iboot-level access.     
+   
+   
 ## :lock: SECURITY
 
 ### WIFI
@@ -348,11 +363,11 @@ and the it becomes unavailable.
    
 **IPS/IDS** - Intrusion prevention/detection system
    
-   **WIPS** - Wireless Intrusion Prevention System - It is a network device that monitors the radio spectrum for the presence of unauthorized access points (intrusion detection), and can automatically take countermeasures (intrusion prevention).
-   **HIDS** - host-based intrusion detection system - It is a system that is capable of monitoring and analyzing the internals of a computing system as well as the network packets on its network interfaces.
-   **NIDS** - Network intrusion detection systems - They are placed at a strategic point or points within the network to monitor traffic to and from all devices on the network.
-   **AIDS** - Anomaly-based intrusion detection systems - They were primarily introduced to detect unknown attacks, in part due to the rapid development of malware. The basic approach is to use machine learning to create a model of trustworthy activity, and then compare new behavior against this model. The model can be trained, however it can bring false positive. 
-
+   **WIPS** - Wireless Intrusion Prevention System - It is a network device that monitors the radio spectrum for the presence of unauthorized access points (intrusion detection), and can automatically take countermeasures (intrusion prevention).     
+   **HIDS** - host-based intrusion detection system - It is a system that is capable of monitoring and analyzing the internals of a computing system as well as the network packets on its network interfaces.     
+   **NIDS** - Network intrusion detection systems - They are placed at a strategic point or points within the network to monitor traffic to and from all devices on the network.    
+   **AIDS** - Anomaly-based intrusion detection systems - They were primarily introduced to detect unknown attacks, in part due to the rapid development of malware. The basic approach is to use machine learning to create a model of trustworthy activity, and then compare new behavior against this model. The model can be trained, however it can bring false positive.     
+   
 ### Security test
 
 **SAST** - Static application security testing - It is used to secure software by reviewing the source code of the software to identify sources of vulnerabilities. An SAST tool scans the source code of applications and its components to identify potential security vulnerabilities in their software and architecture. Static analysis tools can detect an estimated 50% of existing security vulnerabilities.
