@@ -29,9 +29,10 @@ The terminology and the information are from :
    
 **Ports**
 
-   - DNS : 53
-   - NTM : 123 (Network Time Protocol)
+   - DNS  : 53
+   - NTM  : 123 (Network Time Protocol)
    - SNMP : 161
+   - SMB  : 445 (originally ran on top of NetBIOS on port 139)
   
 **Tcpdump** – wireshark but for CLI (no graphic)
 
@@ -191,6 +192,8 @@ and the it becomes unavailable.
 **Cloud Hopper** - This is an operation uncovered by security researchers in 2017. The attacks were leveled against managed IT service providers, which the group used as intermediaries to get their hands on their target’s corporate assets and trade secrets.
 
 **Cloudborne** - An attack scenario affecting various cloud providers could allow an attacker to implant persistent backdoors for data theft into bare-metal cloud servers, which would be able to remain intact as the cloud infrastructure moves from customer to customer.
+   
+   **MITC** - Man in the cloud - It aims to access victims’ accounts without the need to obtain compromised user credentials beforehand. It takes advantage of the OAuth synchronisation token system used by cloud applications.
 
 ### Web
 
@@ -223,7 +226,14 @@ and the it becomes unavailable.
 ### USB
 
 **Juice jacking** - An infected USB charging station is used to compromise linked devices.
+**iOS Trustjacking** - Allows attackers to exploit the iTunes Wi-Fi sync feature. - The victim must connect to a malicious computer or device, via USB. When plugged, they will receive a prompt to ask if they would like to trust the connected device. Once the victim has connected and trusted the malicious device, the attacker allows the victim to connect to iTunes and enable the iTunes Wi-Fi Sync feature. This gives the attacker persistent access to the victim device over the same network, or over further distances by using a VPN.
+   
+### Mobile
+   
+   **Man in the Disk** - A type of cyber attack on devices running Android in which malware installed on a smartphone or tablet targets an app through files located in external storage. Unlike in internal memory, apps are not isolated from each other in this space, so cybercriminals are able to substitute or modify temporary files or updates stored there.
 
+   **SS7 vuln** - The Common Channel Signaling System 7 - It is a set of application protocols for the transmission of service information over telephone networks that can be compromised and the attacker can intercept voice and sms communications on a cellular network.
+   
 ### Social Engineering
 
 **Tailgating** - Also known as Piggybacking. It involves an attacker seeking entry to a restricted area that lacks the proper authentication.
@@ -286,13 +296,13 @@ and the it becomes unavailable.
 
 **Registration** - The attacker registers himself as the targeted VoIP user. If successful, all the incoming calls to the victim VoIP user will be routed to the VoIP phone chosen.
 
-**Rootkit** - Malicious software that provides root-level, privileged access to a computer while hiding its existence and actions. Hackers use rootkits to conceal themselves until they decide to execute their malicious malware. The list below show what can be done with a rootkit:
-
-   - Sensitive data stolen
-   - Malware infection
-   - File removal
-   - Eavesdropping
-   - Remote control
+**Rootkit** - Malicious software that provides root-level, privileged access to a computer while hiding its existence and actions. Hackers use rootkits to conceal themselves until they decide to execute their malicious malware. Here's is what we can do with a rootkit : Sensitive data stolen, Malware infection, File removal, Eavesdropping, Remote control.
+   
+   - **User-mode or application rootkit** - They are installed in a shared library and operate at the application layer, where they can modify application and API behavior. Easy to detect since they operate at the same layer as the anti-virus.
+   - **Kernel-mode** - They are implemented within an operating system’s kernel module, where they can control all system processes. In addition to being difficult to detect, kernel-mode rootkits can also impact the stability of the target system.
+   - **Bootkits** - They gain control of a target system by infecting its master boot record (MBR). Bootkits allow a malicious program to execute before the target operating system loads.
+   - **Firmware rootkits** - They gain access to the software that runs devices, such as routers, network cards, hard drives or system BIOS.
+   - **Rootkit hypervisors** - They exploit hardware virtualization features to gain control of a machine. This is done by bypassing the kernel and running the target operating system in a virtual machine. Hypervisors are almost impossible to detect and clean because they operate at a higher level than the operating system, and can intercept all hardware calls made by the target operating system.
     
 **Viruses** - Here's different types of viruses:
    1. Tunneling Virus - This virus attempts to bypass detection by antivirus scanner by installing itself in the interrupt handler chain. Interception programs, which remain in the background of an operating system and catch viruses, become disabled during the course of a tunneling virus. Similar viruses install themselves in device drivers.
@@ -398,6 +408,8 @@ and the it becomes unavailable.
 **MBSA** - Microsoft Baseline Security Analyzer - is a software tool that helps determine the security of your Windows computer based on Microsoft’s security recommendations.
 
 **WAP** - Wireless Access Point – use 802.11 
+   
+**TPM** - Trusted Platform Module - It is an international standard for a secure cryptoprocessor and is a chip found on the computer’s motherboard. The function of a TPM is to generate encryption keys and keep a part of the key inside the TPM rather than all on the disk.
 
 **PKI** - Public Key Infrastructure - Encryption is typically done at the 6th layer of the OSI model (Presentation Layer), although it can be done on the application, session, transport, or network layers, each having its own advantages and disadvantages. Decryption is also handled at the presentation layer.
 
@@ -480,12 +492,30 @@ generic processes for the management of IT, with each process defined together w
 **Maintain an Information Security Policy**   
 12. Maintain a policy that addresses information security for employees and contractors.
 
+   **Android** - The basic configuration in an Android application must have an AndroidManifest.xml file (with precisely that name) at the root of the project source set. In addition the manifest require the app's package name, the components of the app, the permissions needed by the app and the HW and SW the app needs.
+   
+   **SMTP server** - RFC 821 for more info https://www.ietf.org/rfc/rfc2821.txt
+   
+   - **VRFY** - It is used to verify a user ID on a mail domain. It can be used to test for valid user IDs.
+   - **RCPT** - Must include a “TO:” parameter specifying the recipient mailbox, and may also incorporate other optional parameters.
+   - **NOOP** - NOOP is useful mainly in testing to avoid timeouts. This command does nothing and can generate only a successful response, with no change in state.
+   - **EXPN** - It asks for confirmation about the identification of a mailing list.
+   
+   **The five-tier container technology architecture**
+   
+   - **Tier-1**: Developer machines - image creation, testing and accreditation. 
+   - **Tier-2**: Testing and accreditation systems - verification and validation of image contents, signing images and sending them to the registries. 
+   - **Tier-3**: Registries - storing images and disseminating images to the orchestrators based on requests. 
+   - **Tier-4**: Orchestrators - transforming images into containers and deploying containers to hosts. 
+   - **Tier-5**: Hosts - operating and managing containers as instructed by the orchestrator.
+      
 ### IoT
 
    - **The first layer consists of Sensor-connected IOT devices**: These are the small, memory-constrained, often battery-operated electronics devices with onboard sensors and actuators. They must sense and record data, perform light computing and being able to connect to a network and communicate the data.
    - **The second layer consists of IOT gateway devices**: Layer 1 need to be connected to the internet via a more powerful computing device called the IOT gateway. It aggregates data from numerous sensing devices and relays it to the cloud. They must be equipped with multiple communication capabilities like Bluetooth, Zigbee, LoRa WAN, Sub-GHz proprietary protocols.
    - **The third layer is the Cloud**: All the sensor data relayed by IOT gateways is stored on cloud hosted servers. These servers accept, store and process data for analysis and decision making. This layer also enables creation of live dashboards which decision makers can monitor and take proactive data driven decisions
    - **The forth layer is IOT Analytics**: The collected raw data is converted into actionable business insights, which can help improve business operations, efficiency or even predict future events like machine failure.
+ 
 
 ## :bulb: MANAGEMENT
 
