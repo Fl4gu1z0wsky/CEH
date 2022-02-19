@@ -29,10 +29,12 @@ The terminology and the information are from :
    
 **Ports**
 
-   - DNS  : 53
-   - NTM  : 123 (Network Time Protocol)
-   - SNMP : 161
-   - SMB  : 445 (originally ran on top of NetBIOS on port 139)
+   - DNS   : 53
+   - NTM   : 123 (Network Time Protocol)
+   - SNMP  : 161
+   - LDAP  : 389
+   - SMB   : 445 (originally ran on top of NetBIOS on port 139)
+   - LDAPS : 636 (TLS/SSL)
   
 **Tcpdump** – wireshark but for CLI (no graphic)
 
@@ -420,6 +422,8 @@ and the it becomes unavailable.
 **FISMA** - The Federal Information Security Management Act - The act requires each federal agency to develop, document, and implement an agency-wide program to provide information security. 
 
 **ISO/IEC 27002** - is an information security standard published by the International Organization for Standardization (ISO) and by the International Electrotechnical Commission (IEC). It comes from the ISO 27000 serie. 
+   
+**PII** - personally identifiable information - This is any information related to an identifiable person.
 
 **COBIT** - Control Objectives for Information and Related Technologies - Created by ISACA (Information Systems Audit and Control Association). It defines a set of 
 generic processes for the management of IT, with each process defined together with process inputs and outputs, key process-activities, process objectives, performance measures and an elementary maturity model.
@@ -437,6 +441,8 @@ generic processes for the management of IT, with each process defined together w
 **802.11i** - Implemented as Wi-Fi Protected Access II (WPA2). This standard specifies security mechanisms for wireless networks, replacing the short Authentication and privacy clause. It deprecated broken Wired Equivalent Privacy (WEP). Published in 2004.
 
 **802.11n** - It operates on both the 2.4 GHz and the 5 GHz bands. Support for 5 GHz bands is optional. Its net data rate ranges from 54 Mbit/s to 600 Mbit/s. Published in 2006.
+   
+**WPA3-Entreprise** - In January 2018, the Wi-Fi Alliance announced WPA3 as a replacement to WPA2. The new standard uses an equivalent 192-bit cryptographic strength in WPA3-Enterprise mode (AES-256 in GCM mode with SHA-384 as HMAC), and still mandates the use of CCMP-128 (AES-128 in CCM mode) as the minimum encryption algorithm in WPA3-Personal mode. It was introduced with IEEE 802.11s.
 
 **Quantum coin flipping** - It is used between two participants who do not trust each other. The participants communicate via a quantum channel and exchange information through the transmission of qubits.
 
@@ -471,6 +477,13 @@ generic processes for the management of IT, with each process defined together w
 **PEM** - Privacy-Enhanced Mail - It is a file format for storing and sending cryptographic keys, certificates, and other data.  While the original standards were never broadly adopted, and were supplanted by PGP and S/MIME, the textual encoding they defined became very popular. The PEM format was eventually formalized by the IETF in RFC 7468.
 
 **SET** - Secure Electronic Transaction - It is a communications protocol standard for securing credit card transactions over networks, specifically, the Internet. It is a set of security protocols and formats that enabled users to employ the existing credit card payment infrastructure on an open network in a secure fashion. However, it failed to gain attraction in the market. Visa now promotes the 3-D Secure scheme.
+   
+**Cloud deployement** - It indicates how the cloud services are made available to users.
+   
+   - **Public* cloud. As the name suggests, this type of cloud deployment model supports all users who want to use a computing resource, such as hardware (OS, CPU, memory, storage) or software (application server, database) on a subscription basis.
+   - **Private cloud**. It is typically infrastructure used by a single organization. The organization itself may manage such infrastructure to support various user groups.
+   - **Hybrid cloud**. In a hybrid cloud, an organization makes use of interconnected private and public cloud infrastructure. Many organizations use this model when they need to rapidly scale up their IT infrastructure.
+   - **Community cloud**. This deployment model supports multiple organizations sharing computing resources that are part of a community; examples include universities cooperating in certain areas of research.
 
 **PCI-DSS** - Payment Card Industry Data Security Standard - It is an information security standard for organizations that handle branded credit cards from the major card schemes. On the clause 11.3 it is said: "Perform external penetration testing at least annually and after any significant infrastructure or application upgrade or modification". Here are some reommandation:     
 **Build and Maintain a Secure Network**  
