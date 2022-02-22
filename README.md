@@ -202,6 +202,8 @@ and the it becomes unavailable.
 **Session Hijacking** - Also known as cookie hijacking, it exploits a valid computer session to gain unauthorized access. The HTTP cookies can be stolen by an intermediary computer or access to the saved cookies on the victim's computer.
 
 **Insecure direct object references** - IDOR are a cybersecurity issue that occurs when a web application developer uses an identifier for direct access to an internal implementation object but provides no additional access control and/or authorization checks (e.g. https://www.example.com/transaction.php?id=74656, there is no check on the id provided).
+   
+**Pharming attack** - A victim is redirected to a fake website by modifying their host configuration file or exploiting DNS vulnerabilities. While phishing attack provides a URL similar to a real one in order to mimic a legitimate site.
 
 **Wrapping attacks** - Injecting a faked element into the message structure so that a valid signature covers the unmodified element while the faked one is processed by the application logic. This type of attack usually occurs during the translation of SOAP messages in the Transport Layer Service (TLS) layer between the web server and valid user. The message body will be duplicated and sent to the server as a valid user.
 
@@ -224,6 +226,10 @@ and the it becomes unavailable.
 **Web Parameter Tampering** - It is based on manipulating parameters exchanged between client and server to modify application data, such as user credentials and permissions, price and quantity of products, etc.
 
 **CRLF** - Carriage Return and Line Feed - Exploits occur when an attacker is able to inject a CRLF sequence into an HTTP stream. By introducing this unexpected CRLF injection, the attacker is able to maliciously exploit CRLF vulnerabilities in order to manipulate the web application's functions.
+   
+**CRIME** - Compression Ratio Info-leak Made Easy - It is a security exploit against secret web cookies over connections using the HTTPS and SPDY protocols that also use data compression when used to recover the content of secret authentication cookies, it allows an attacker to perform session hijacking on an authenticated web session (CVE-2012-4929).
+   
+**Digital signature** - The individual who creates the digital signature uses a private key to encrypt signature-related data, while the only way to decrypt that data is with the signer's public key.
 
 ### USB
 
@@ -251,6 +257,8 @@ and the it becomes unavailable.
 **Ellicitation** - Elicitation means to bring or draw out or arrive at a conclusion (truth, for instance) by logic. In training materials, the National Security Agency of the United States government defines elicitation as "the subtle extraction of information during an apparently normal and innocent conversation." It can occur at a restaurant, a bar, a daycare, ...
    
 **Eavesdropping** - It is the act of secretly or stealthily listening to the private conversation or communications of others without their consent in order to gather information.
+   
+**Session Donation** - An attacker creates an account and sends authenticated link to the victim. Convincing the victim to provide more information about their account but in reality, it is not their account but the attackers account. Instead, the Session Fixation attack fixes an established session on the victim’s browser, so the attack starts before the user logs in.
 
 ### Network
    
@@ -283,6 +291,8 @@ and the it becomes unavailable.
 **Slowloris** - A single machine tries to keep many connections to the target web server open and hold them open as long as possible with partial request.
    
 **Spoofed Session Flood** - Fake Session attacks try to bypass security (only monitoring incoming traffic on the network) under the disguise of a valid TCP session by carrying an SYN, multiple ACK and one or more RST or FIN packets. It can also bring a complete shutdown of the system.   
+   
+*STP attack*** - It is when an attacker spoof the root bridge in the topology. The attacker broadcasts out an STP configuration/topology change BPDU in an attempt to force an STP recalculation. The attacker’s system has a lower bridge priority. He then sees a variety of frames forwarded from other switches to it.
    
 ### Others
 
@@ -361,6 +371,13 @@ and the it becomes unavailable.
 **DMZ** - demilitarized zone - functions as a subnetwork containing an organization's exposed, outward-facing services. It acts as the exposed point to untrusted networks, commonly the Internet. The goal of a DMZ is to add an extra layer of security to an organization's local area network. A protected and monitored network node that faces outside the internal network can access what is exposed in the DMZ. In contrast, the rest of the organization's network is safe behind a firewall.
 
 **DNSSEC** - Domain Name System Security Extension - When deployed, computers will be able to confirm if DNS responses are legitimate. It also has the ability to verify that a domain name does not exist at all, which can help prevent man-in-the-middle attacks. DNSSEC will verify the root domain or sometimes called “signing the root.” When an end-user attempts to access a site, a stub resolver on their computer requests the site's IP address from a recursive name server. After the server requests the record, it will also request the zones DNSEC key. The key will then be used to verify that the IP address record is the same as the authoritative server's record. Next, the recursive name server would verify that the address record came from the authoritative name server. It would then verify it has been modified and resolves the correct domain source. If there has been a modification to the source, then the recursive name server will not allow the connection to occur to the site.
+   
+**STP** - Spanning Tree Protocol - It uses BDPU (bridge protocol data unit is a data message transmitted across a local area network to detect loops in network topologies. It contains information regarding ports, switches, port priority and addresses.
+   
+   - root-guard - prevents a port to become root port
+   - bpdu-guard - disables a port on BPDU reception
+   - bpdu-filter - ignores BPDUs received on a given port (disabling loop detection by STP!)
+   - tcn-guard - ignores topology change notifications received on a given port
 
 **HoneyPot** - It is a decoy system or servers deployed alongside production systems within the network. When deployed as enticing targets for attackers, honeypots can add security monitoring opportunities for blue teams and misdirect the adversary from their true target.
 
@@ -373,6 +390,13 @@ and the it becomes unavailable.
 
 **Port security** - It helps secure the network by preventing unknown devices to connect to a port. You can limit the number of MAC addresses on a given port. Packets that have a matching MAC address (secure packets) are forwarded; all other packets (unsecure packets) are restricted. You can enable port security on a per port basis. There is 2 modes: Dynamic (learn automatically a certain number of MAC adresses) or Static (we have to specify the MAC).
    
+**LDAP** - Lightweight Directory Access Protocol - Enumeration countermeasures:
+   
+   - By default, LDAP traffic is transmitted unsecured; use SSL or STARTTLS technology to encrypt the traffic.
+   - Select a username different from your email address and enable account lockout.
+   - Restrict access to Active Directory by using software such as Citrix.
+   - Use NTLM or any basic authentication mechanism to limit access to legitimate users.
+      
 **IPS/IDS** - Intrusion prevention/detection system
    
    **WIPS** - Wireless Intrusion Prevention System - It is a network device that monitors the radio spectrum for the presence of unauthorized access points (intrusion detection), and can automatically take countermeasures (intrusion prevention).     
@@ -443,6 +467,14 @@ generic processes for the management of IT, with each process defined together w
 **802.11n** - It operates on both the 2.4 GHz and the 5 GHz bands. Support for 5 GHz bands is optional. Its net data rate ranges from 54 Mbit/s to 600 Mbit/s. Published in 2006.
    
 **WPA3-Entreprise** - In January 2018, the Wi-Fi Alliance announced WPA3 as a replacement to WPA2. The new standard uses an equivalent 192-bit cryptographic strength in WPA3-Enterprise mode (AES-256 in GCM mode with SHA-384 as HMAC), and still mandates the use of CCMP-128 (AES-128 in CCM mode) as the minimum encryption algorithm in WPA3-Personal mode. It was introduced with IEEE 802.11s.
+   
+**DES** - Data Encryption Standard - It is a symmetric-key algorithm for the encryption of digital data, with a fixed block size of 64 bits, and a key size of 56 bits.
+   
+**Triple DES** - Triple Data Encryption Standard - It uses a 64-bit block size that is encrypted three times with 56-bit keys.
+   
+**IDEA** - International Data Encryption Algorithm - It operates on 64-bit blocks using a 128-bit key and consists of a series of 8 identical transformations.
+   
+**AES ** - Advanced Encryption Standard - It is a variant of Rijndael, with a fixed block size of 128 bits, and a key size of 128, 192, or 256 bits.
 
 **Quantum coin flipping** - It is used between two participants who do not trust each other. The participants communicate via a quantum channel and exchange information through the transmission of qubits.
 
@@ -471,12 +503,18 @@ generic processes for the management of IT, with each process defined together w
 **IRC** - Internet Relay Chat - It is an application layer protocol that facilitates communication in text. The chat process works on a client/server networking model.
 
 **IPsec** - Internet Protocol Security - It is a secure network protocol suite that authenticates and encrypts the packets of data to provide secure encrypted communication between two computers over an Internet Protocol network. It is used in virtual private networks (VPNs). It works on the network layer. 
+   
+**RESTful API** - It is designed using REST principles and HTTP communication protocols RESTful is a collection of resources that use HTTP methods such as PUT, POST, GET, and DELETE.
 
 **PPP** - Point-to-Point Protocol - It is a Data link layer (layer 2) communications protocol between two routers directly without any host or any other networking in between. It can provide connection authentication, transmission encryption, and compression.
 
 **PEM** - Privacy-Enhanced Mail - It is a file format for storing and sending cryptographic keys, certificates, and other data.  While the original standards were never broadly adopted, and were supplanted by PGP and S/MIME, the textual encoding they defined became very popular. The PEM format was eventually formalized by the IETF in RFC 7468.
 
 **SET** - Secure Electronic Transaction - It is a communications protocol standard for securing credit card transactions over networks, specifically, the Internet. It is a set of security protocols and formats that enabled users to employ the existing credit card payment infrastructure on an open network in a secure fashion. However, it failed to gain attraction in the market. Visa now promotes the 3-D Secure scheme.
+   
+**Webhook** - They are automated messages sent from apps when something happens. It is a method of altering the behavior of a web page or web application with custom callbacks. The format is usually JSON. The request is done as an HTTP POST request.
+   
+**Code Emulation** - Or sandbox detection - Simulate CPU and memory activities on a virtual machine.
    
 **Cloud deployement** - It indicates how the cloud services are made available to users.
    
