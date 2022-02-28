@@ -25,7 +25,11 @@ The terminology and the information are from :
    -sX (Xmas scan). Sets the FIN, PSH, and URG flags, lighting the packet up like a Christmas tree.    
    -T (can go from 0 to 5, e.g. -T4) To increase the speed and intensity of the scan.    
    -p <port ranges> Only scan specified ports.    
-   -r (Don't randomize ports).    
+   -r (Don't randomize ports).  
+   -PS <port list> - TCP SYN Ping - It sends an empty TCP packet with the SYN flag set.  
+   -PA<port list> - TCP ACK Ping.  
+   -PO<protocol list> - IP Protocol Ping.  
+   -nmap --script enip-info -sU -p 44818 <host> - Used to send a EtherNet/IP packet to a remote device that has TCP 44818 open. Then will parse out the data received. Information that is parsed includes Device Type, Vendor ID, Product name, Serial Number, Product code, Revision Number, status, state, as well as the Device IP.  
    
 **Ports**
 
@@ -110,6 +114,8 @@ The terminology and the information are from :
 It uses traceroute and TTL (Time to Live) to analyze IP packet response to in order to determine gateway ACL (Access Control List) filters and map network. The idea 
 behind firewalking is to determine which ports are open and whether packets with control information can pass through a packet-filtering device. It is an active 
 reconnaissance network security analysis technique that attempts to determine which layer 4 protocols a specific firewall will allow.
+   
+**Wardriving** - It is the act of searching for Wi-Fi wireless networks, usually from a moving vehicle, using a laptop or smartphone. Warbiking, warcycling, warwalking and similar use the same approach but with other modes of transportation.
 
 ### Mail
 
